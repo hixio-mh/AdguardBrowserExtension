@@ -154,7 +154,7 @@ const webrequestInit = function () {
         );
 
         if (!requestRule?.isDocumentWhitelistRule()) {
-            cookieService.onBeforeRequest(requestDetails, getCookieRules(requestUrl, referrerUrl));
+            cookieService.onBeforeRequest(requestDetails, getCookieRules(tab, requestUrl, referrerUrl));
         }
 
         requestRule = webRequestService.postProcessRequest(
