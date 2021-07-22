@@ -20,10 +20,10 @@
   resolved "https://registry.yarnpkg.com/@adguard/translate/-/translate-0.2.3.tgz#f30ef9000a3073ea0c24860cd0bf685b16de063b"
   integrity sha512-I0XcTSKrrRryD1PGd8kPKHB5SIY45+gTEAMqhpo2lDyUNMkW9MdhrNeAuoejJ+BuqU2TT+jK7KCNe33r7IsSjw==
 
-"@adguard/tsurlfilter@^0.5.18":
-  version "0.5.18"
-  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-0.5.18.tgz#7fc6924d74f87a4f55cb793524037637752a40f3"
-  integrity sha512-q+3t6ZRB7GcBrnecePj9tQ5WsqrLQB5F4o+JSa5QJR+aUrJ++2KzpQHY/jiksgp1Kojidk7rTTkFjU6W6Tx30w==
+"@adguard/tsurlfilter@^0.5.19":
+  version "0.5.19"
+  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-0.5.19.tgz#4fbafb1a0aca1ec1514fcc547f7eefe7480d952f"
+  integrity sha512-JQyqVVmHNhLApy6r1RPQNLtPNr6PYCzdUZBWClz8XHyJiV490s465wGUq8eKjkP+Iu9ZVX5QBn/Nf4s7/uNrsw==
   dependencies:
     "@adguard/scriptlets" "^1.4.1"
     "@types/punycode" "^2.1.0"
