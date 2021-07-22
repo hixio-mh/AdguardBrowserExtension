@@ -17,19 +17,19 @@
 
 import * as TSUrlFilter from '@adguard/tsurlfilter';
 import { filteringLog } from '../filtering-log';
-import { filteringApi } from '../filtering-api';
+import { webRequestService } from '../request-blocking';
 import { RequestTypes } from '../../utils/request-types';
 
 /**
  * Returns cookie rules matching request details
  *
+ * @param tab
  * @param url
  * @param referrer
  * @return {NetworkRule[]}
  */
-export const getCookieRules = (url, referrer) => {
-    const cookieRules = filteringApi.getCookieRules(url, referrer, RequestTypes.DOCUMENT);
-    return cookieRules;
+export const getCookieRules = (tab, url, referrer) => {
+    return webRequestService.getCookieRules(tab, url, referrer, RequestTypes.DOCUMENT);
 };
 
 /**
@@ -46,12 +46,13 @@ export const getCookieRules = (url, referrer) => {
  * for all frames or main frame only. But it's not correct cause there should be different rules
  * for each frame.
  *
+ * @param tab
  * @param url
  * @param referrer
  * @returns {Array} serialized rules data
  */
-export const getCookieRulesDataForContentScript = (url, referrer) => {
-    const blockingRules = getCookieRules(url, referrer).filter((rule) => {
+export const getCookieRulesDataForContentScript = (tab, url, referrer) => {
+    const blockingRules = getCookieRules(tab, url, referrer).filter((rule) => {
         const cookieModifier = rule.getAdvancedModifier();
         return !cookieModifier.getSameSite() && !cookieModifier.getMaxAge();
     });
