@@ -27,6 +27,7 @@ import { browserUtils } from '../../utils/browser-utils';
 import { browser } from '../../extension-api/browser';
 import { STEALTH_ACTIONS } from '../../../common/constants';
 import { utils } from '../../utils/common';
+import { RequestTypes } from '../../utils/request-types';
 
 /**
  * Class to apply stealth settings
@@ -55,7 +56,10 @@ export const stealthService = (() => {
             return false;
         }
 
-        const stealthActions = engine.processRequestHeaders(requestUrl, requestType, requestHeaders);
+        const stealthActions = engine.processRequestHeaders(
+            requestUrl, RequestTypes.transformRequestType(requestType), requestHeaders,
+        );
+
         if (stealthActions > 0) {
             requestContextStorage.update(requestId, { stealthActions });
         }
