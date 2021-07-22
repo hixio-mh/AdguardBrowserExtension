@@ -402,7 +402,7 @@ const createMessageHandler = () => {
                 }
 
                 return {
-                    rulesData: getCookieRulesDataForContentScript(message.documentUrl, sender.tab.url),
+                    rulesData: getCookieRulesDataForContentScript(sender.tab, message.documentUrl, sender.tab.url),
                 };
             }
             case MESSAGE_TYPES.SAVE_COOKIE_LOG_EVENT: {
