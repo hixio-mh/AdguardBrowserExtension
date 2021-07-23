@@ -23,6 +23,7 @@ export const defaultSettings = {
         'enabled-groups': [
             1,
             6,
+            7,
         ],
         'enabled-filters': [
             10,

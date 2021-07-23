@@ -27,6 +27,8 @@ export const ANTIBANNER_GROUPS_ID = {
     PRIVACY_FILTERS_GROUP_ID: 2,
     // other filters group identifier
     OTHER_FILTERS_GROUP_ID: 6,
+    // language-specific group identifier
+    LANGUAGE_FILTERS_GROUP_ID: 7,
 };
 
 /**

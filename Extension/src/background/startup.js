@@ -24,6 +24,7 @@ import { uiService } from './ui-service';
 import { application } from './application';
 import { browser } from './extension-api/browser';
 import { stealthService } from './filter/services/stealth-service';
+import { ANTIBANNER_GROUPS_ID } from '../common/constants';
 
 /**
  * Extension initialize logic. Called from start.js
@@ -69,6 +70,8 @@ export const startup = async function () {
                 // Retrieve filters and install them
                 const filterIds = application.offerFilters();
                 await application.addAndEnableFilters(filterIds);
+                // enable language-specific group by default
+                await application.enableGroup(ANTIBANNER_GROUPS_ID.LANGUAGE_FILTERS_GROUP_ID);
             },
         });
     }
