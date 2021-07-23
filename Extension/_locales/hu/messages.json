@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Adja meg a szűrő nevét"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Mind"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Engedélyezve"
     },
@@ -169,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Nincsenek engedélyezett szűrők"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "megbízható"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Úgy döntött, hogy megbízik ebben a szűrőben"
@@ -419,18 +413,6 @@
     "filters_download_loading": {
         "message": "Kérjük várjon, amíg a szűrők adatbázisa betölt..."
     },
-    "filter_download_do_you_know": {
-        "message": "Tudta?"
-    },
-    "filters_download_sb_sites": {
-        "message": "Az AdGuard adathalász- és kártevő ellenes adatbázisa<br\/>több, mint 1 millió webhelyet tartalmaz."
-    },
-    "filters_download_rules": {
-        "message": "Átlagosan hetente több, mint 1000 hirdetésszűrő szabályt adunk hozzá."
-    },
-    "filters_download_ads_malware": {
-        "message": "A rosszindulatú szoftverek és különböző vírusok 90%-a<br\/>gátlástalan hirdetési hálózatokon keresztül terjed."
-    },
     "filtering_modal_element": {
         "message": "Elem:"
     },
@@ -445,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Adja meg a keresett szöveget"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Napló megőrzése"
-    },
-    "filtering_refresh_tab": {
-        "message": "Oldal újratöltése"
     },
     "filtering_clear_log_events": {
         "message": "Napló törlése"
@@ -527,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Szabály alkalmazása az összes webhelyre"
     },
-    "filtering_modal_match_case": {
-        "message": "Kis- és nagybetű érzékenység bekapcsolása"
-    },
     "filtering_modal_third_party": {
         "message": "Csak a harmadik felektől származó kérésekre alkalmazza"
     },
@@ -541,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Megnyitás új fülön"
-    },
-    "filtering_log_filter_title": {
-        "message": "Szűrő"
     },
     "filtering_log_filter_regular": {
         "message": "Szokásos"
@@ -559,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Felhasználói szűrő"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Elsődleges"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Harmadik féltől"
     },
     "options_settings": {
         "message": "AdGuard beállítások"
@@ -638,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Értékeljen minket!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Vegyes"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Információ megjelenítése a teljes verziós AdGuardon"
     },
     "options_show_app_updated_notification": {
         "message": "Értesítsen a kiegészítő frissítéseiről"
-    },
-    "options_open_log": {
-        "message": "Szűrési napló"
-    },
-    "options_reset_stats": {
-        "message": "Statisztikák visszaállítása"
     },
     "options_reset_stats_done": {
         "message": "Statisztikák visszaállítva"
@@ -683,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Annak megelőzése, hogy a harmadik felek megismerjék, Ön milyen webhelyeket látogat meg"
     },
-    "options_hide_search_queries_title": {
-        "message": "Keresési kérések elrejtése"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Elrejti a keresési kérést a weboldal elől, amit a kereső találatai közül látogat meg"
-    },
-    "options_send_not_track_title": {
-        "message": "Do-Not-Track fejléc küldése"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Követési paraméterek eltávolítva"
     },
@@ -700,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Külső süti módosítva"
-    },
-    "options_send_not_track_desc": {
-        "message": "Kérés küldése a webhelyek felé, hogy ne kövessék az Ön tevékenységét"
     },
     "options_remove_client_data_title": {
         "message": "X-Client-Data fejléc eltávolítása"
@@ -718,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Követési paraméterek levágása"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Vesszőkkel elválaszott lista a követési paraméterekről, amiket az AdGuard eltávolít az oldalak URL-jéből."
-    },
-    "options_cookies_title": {
-        "message": "Sütik"
     },
     "options_third_party_title": {
         "message": "Harmadik féltől származó sütik önmegsemmisítése"
@@ -791,7 +728,7 @@
     "options_delete_filter_confirm": {
         "message": "Biztosan törli ezt a szűrőt?"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_stealth_general_title": {
+        "message": "Általános"
     }
 }

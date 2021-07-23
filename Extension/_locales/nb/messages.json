@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Skriv inn et filternavn"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Alle"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Skrudd på"
     },
@@ -140,11 +137,14 @@
     "options_filters_enabled": {
         "message": "Aktivert:"
     },
+    "options_filters_enabled_and_more": {
+        "message": "%enabled% og %more% til"
+    },
+    "options_filters_enabled_and_last": {
+        "message": "%enabled% og %last%"
+    },
     "options_filters_no_enabled": {
         "message": "Ingen filtre er skrudd på"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "betrodd"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Du valgte å stole på dette filteret"
@@ -187,6 +187,12 @@
     },
     "popup_site_filtering_state_paused": {
         "message": "Beskyttelsen er satt på pause"
+    },
+    "popup_tab_blocked_count": {
+        "message": "Blokkert: %num%"
+    },
+    "popup_tab_blocked_all_count": {
+        "message": "Totalt: %num%"
     },
     "popup_statistics_total": {
         "message": "Totalt"
@@ -359,9 +365,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Automatisk aktivering av filtrene"
     },
-    "filter_download_do_you_know": {
-        "message": "Visste du?"
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -373,12 +376,6 @@
     },
     "filtering_log_search_string": {
         "message": "Skriv inn søkeord"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Preserver loggføringen"
-    },
-    "filtering_refresh_tab": {
-        "message": "Oppdater side"
     },
     "filtering_clear_log_events": {
         "message": "Tøm logg"
@@ -434,6 +431,9 @@
     "filtering_modal_remove_user": {
         "message": "Fjern fra brukerfiltre"
     },
+    "filtering_modal_remove_allowlist": {
+        "message": "Fjern fra hvitelisten"
+    },
     "filtering_modal_add_title": {
         "message": "Legge til regel"
     },
@@ -446,9 +446,6 @@
     "filtering_modal_apply_domains": {
         "message": "Bruk regelen på alle nettsider"
     },
-    "filtering_modal_match_case": {
-        "message": "Vurder saken"
-    },
     "filtering_modal_third_party": {
         "message": "Bruk kun på tredjepartsforespørsler"
     },
@@ -460,9 +457,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Åpne i en ny fane"
-    },
-    "filtering_log_filter_title": {
-        "message": "Filter"
     },
     "filtering_log_filter_regular": {
         "message": "Regular"
@@ -478,12 +472,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Brukerfilter"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "First party"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Tredjepart"
     },
     "options_settings": {
         "message": "AdGuard-innstillinger"
@@ -545,17 +533,11 @@
     "options_discuss": {
         "message": "Diskuter AdGuard"
     },
-    "options_miscellaneous_settings": {
-        "message": "Diverse"
+    "options_do_you_like_question": {
+        "message": "Liker du AdGuard?"
     },
     "options_show_app_updated_notification": {
         "message": "Bli varslet om utvidelsesoppdateringer"
-    },
-    "options_open_log": {
-        "message": "Filtreringslogg"
-    },
-    "options_reset_stats": {
-        "message": "Tilbakestill statistikker"
     },
     "options_reset_stats_done": {
         "message": "Statistikkene har blitt tilbakestilt"
@@ -578,15 +560,6 @@
     "options_hide_referrer_desc": {
         "message": "Hindre tredjeparter fra å vite hvilket nettsted du besøker"
     },
-    "options_hide_search_queries_title": {
-        "message": "Skjul søkeordene dine"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Skjul søkeordene til nettsteder som blir besøkt fra en søkemotor"
-    },
-    "options_send_not_track_title": {
-        "message": "Send «Do Not Track»-overskrift"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Sporingsparametre fjernet"
     },
@@ -595,9 +568,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Tredjepartsinfokapsel modifisert"
-    },
-    "options_send_not_track_desc": {
-        "message": "Hindre nettsteder fra å spore deg"
     },
     "options_remove_client_data_title": {
         "message": "Fjern «X-Client-Data»-overskrift"
@@ -613,9 +583,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Fjern sporingsparametre"
-    },
-    "options_cookies_title": {
-        "message": "Informasjonskapsler"
     },
     "options_third_party_title": {
         "message": "Selvødeleggelse av tredjepartsinfokapsler"
@@ -682,6 +649,9 @@
     },
     "options_delete_filter_confirm": {
         "message": "Er du sikker på at du vil slette dette filteret?"
+    },
+    "options_stealth_general_title": {
+        "message": "Generelle innstillinger"
     },
     "description": {
         "message": "Unmatched adblock extension against advertising and pop-ups. Blocks ads on Facebook, YouTube and all other websites."

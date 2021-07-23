@@ -89,17 +89,11 @@
     "alert_popup_filter_enabled_title": {
         "message": "Автоматична активация на филтрите"
     },
-    "filter_download_do_you_know": {
-        "message": "Знаете ли че?"
-    },
     "filtering_log_title": {
         "message": "Дневник на филтрирането"
     },
     "filtering_log_search_string": {
         "message": "Въведете низ за търсене"
-    },
-    "filtering_refresh_tab": {
-        "message": "Опресни статуса"
     },
     "filtering_type_all": {
         "message": "Всички"
@@ -146,9 +140,6 @@
     "filtering_modal_apply_domains": {
         "message": "Приложи правилото за всички страници"
     },
-    "filtering_modal_match_case": {
-        "message": "Разгледай случая"
-    },
     "filtering_modal_third_party": {
         "message": "Приложи само към заявки от трети страни"
     },
@@ -190,15 +181,6 @@
     },
     "options_site": {
         "message": "Официален сайт"
-    },
-    "options_miscellaneous_settings": {
-        "message": "Разни"
-    },
-    "options_open_log": {
-        "message": "Дневник на филтрирането"
-    },
-    "options_reset_stats": {
-        "message": "Нулирай статистиката"
     },
     "options_reset_stats_done": {
         "message": "Статистиката е нулирана"

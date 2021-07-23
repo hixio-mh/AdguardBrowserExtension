@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Εισάγετε όνομα φίλτρου"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Όλα"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Ενεργό"
     },
@@ -169,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Δεν ενεργοποιήθηκαν φίλτρα"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "έμπιστο"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Επιλέξατε να εμπιστευτείτε αυτό το φίλτρο"
@@ -419,18 +413,6 @@
     "filters_download_loading": {
         "message": "Περιμένετε όσο φορτώνεται η βάση δεδομένων φίλτρων..."
     },
-    "filter_download_do_you_know": {
-        "message": "Γνωρίζατε ότι;"
-    },
-    "filters_download_sb_sites": {
-        "message": "Η βάση δεδομένων ηλεκτρονικού ψαρέματος και κακόβουλου λογισμικού AdGuard περιέχει<br\/>περισσότερους από 1 εκατομμύριο ιστότοπους."
-    },
-    "filters_download_rules": {
-        "message": "Κατά μέσο όρο, προσθέτουμε περισσότερους από 1000 κανόνες φίλτρου διαφημίσεων κάθε εβδομάδα."
-    },
-    "filters_download_ads_malware": {
-        "message": "Το 90% του κακόβουλου λογισμικού και διαφόρων ιών εξαπλώνεται<br\/>μέσω αδίστακτων δικτύων διαφημίσεων."
-    },
     "filtering_modal_element": {
         "message": "Στοιχείο:"
     },
@@ -445,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Εισάγετε τη συμβολοσειρά αναζήτησης"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Διατήρηση καταγραφών"
-    },
-    "filtering_refresh_tab": {
-        "message": "Ανανέωση σελίδας"
     },
     "filtering_clear_log_events": {
         "message": "Εκκαθάριση καταγραφών"
@@ -527,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Εφαρμογή του κανόνα σε όλες τις ιστοσελίδες"
     },
-    "filtering_modal_match_case": {
-        "message": "Ενεργοποίηση ευαισθησίας πεζών-κεφαλαίων"
-    },
     "filtering_modal_third_party": {
         "message": "Εφαρμογή μόνο σε αιτήσεις τρίτων"
     },
@@ -541,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Άνοιγμα σε νέα καρτέλα"
-    },
-    "filtering_log_filter_title": {
-        "message": "Φίλτρο"
     },
     "filtering_log_filter_regular": {
         "message": "Κανονικά"
@@ -559,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Φίλτρο χρήστη"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Πρώτου-μέρους"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Τρίτου-μέρους"
     },
     "options_settings": {
         "message": "Ρυθμίσεις AdGuard"
@@ -638,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Βαθμολογήστε το!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Διάφορα"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Εμφάνιση πληροφοριών σχετικά με την πλήρη έκδοση του AdGuard"
     },
     "options_show_app_updated_notification": {
         "message": "Ειδοποιήσεις για ενημερώσεις της επέκτασης"
-    },
-    "options_open_log": {
-        "message": "Καταγραφές φιλτραρίσματος"
-    },
-    "options_reset_stats": {
-        "message": "Επαναφορά στατιστικών"
     },
     "options_reset_stats_done": {
         "message": "Έγινε επαναφορά των στατιστικών"
@@ -683,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Εμποδίζει τρίτους από το να γνωρίζουν ποια ιστοσελίδα επισκέπτεστε"
     },
-    "options_hide_search_queries_title": {
-        "message": "Απόκρυψη ερωτημάτων αναζήτησης"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Απόκρυψη των ερωτημάτων για ιστότοπους που επισκεφθήκατε με μια μηχανή αναζήτησης"
-    },
-    "options_send_not_track_title": {
-        "message": "Αποστολή αιτήματος \"Χωρίς παρακολούθηση\""
-    },
     "options_stripped_tracking_parameters": {
         "message": "Αφαιρέθηκε παράμετρος παρακολούθησης"
     },
@@ -700,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Cookie τρίτου μέρους τροποποιήθηκε"
-    },
-    "options_send_not_track_desc": {
-        "message": "Εμποδίζει ιστοσελίδες από το να σας παρακολουθούν"
     },
     "options_remove_client_data_title": {
         "message": "Αφαίρεση αιτήματος X-Client-Data"
@@ -718,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Αφαίρεση παραμέτρων παρακολούθησης"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Λίστα παραμέτρων παρακολούθησης χωρισμένων με κόμμα τις οποίες θα αφαιρεί το AdGuard από τις διευθύνσεις ιστοσελίδων."
-    },
-    "options_cookies_title": {
-        "message": "Cookies"
     },
     "options_third_party_title": {
         "message": "Αυτοκαταστροφή cookies τρίτων"
@@ -791,7 +728,7 @@
     "options_delete_filter_confirm": {
         "message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το φίλτρο;"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_stealth_general_title": {
+        "message": "Γενικά"
     }
 }

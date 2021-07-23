@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": " फ़िल्टर का नाम दर्ज करें"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "सभी"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "सक्रिय"
     },
@@ -139,9 +136,6 @@
     },
     "options_filters_no_enabled": {
         "message": "कोई फ़िल्टर सक्षम नहीं है"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "विश्वसनीय"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "आपने इस फ़िल्टर पर विश्वास करना चुना है"
@@ -353,9 +347,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "\tफ़िल्टर का स्वतः सक्रियण"
     },
-    "filter_download_do_you_know": {
-        "message": "क्या तुम जानते हों ?"
-    },
     "filtering_modal_element": {
         "message": "तत्व:"
     },
@@ -367,12 +358,6 @@
     },
     "filtering_log_search_string": {
         "message": "\tखोज स्ट्रिंग दर्ज करें"
-    },
-    "filtering_log_preserve_log": {
-        "message": "लॉग संरक्षित करें "
-    },
-    "filtering_refresh_tab": {
-        "message": "पृष्ठ रीफ्रेश करें"
     },
     "filtering_type_all": {
         "message": "सभी"
@@ -421,9 +406,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "सभी वेबसाइटों के लिए नियम लागू करें"
-    },
-    "filtering_modal_match_case": {
-        "message": "केस-संवेदनशीलता सक्षम करें"
     },
     "filtering_modal_third_party": {
         "message": "केवल तृतीय-पक्ष अनुरोधों पर लागू करें"
@@ -482,17 +464,8 @@
     "options_discuss": {
         "message": "एडगार्ड पर चर्चा करें"
     },
-    "options_miscellaneous_settings": {
-        "message": "कई तरह का"
-    },
     "options_show_app_updated_notification": {
         "message": "एक्सटेंशन अपडेट के बारे में सूचित करें"
-    },
-    "options_open_log": {
-        "message": "लॉग फ़िल्टर किया जा रहा है"
-    },
-    "options_reset_stats": {
-        "message": "सांख्यिकीय को रीसेट करें"
     },
     "options_reset_stats_done": {
         "message": "आंकड़े रीसेट कर दिए गए हैं"
@@ -518,15 +491,6 @@
     "options_hide_referrer_desc": {
         "message": "तृतीय-पक्ष को यह जानने से रोकें कि आप किस वेबसाइट पर जा रहे हैं।"
     },
-    "options_hide_search_queries_title": {
-        "message": "अपनी खोज क्वेरी छिपाएं"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "खोज इंजन से विज़िट की गई वेबसाइटों के लिए क्वेरीज़ छुपाएं।"
-    },
-    "options_send_not_track_title": {
-        "message": "Do-Not-Track हेडर भेजें"
-    },
     "options_stripped_tracking_parameters": {
         "message": "ट्रैकिंग पैरामीटर stripped"
     },
@@ -535,9 +499,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "प्रथम-पक्ष कुकी संशोधित"
-    },
-    "options_send_not_track_desc": {
-        "message": "वेबसाइटों को आप पर नज़र रखने से रोकें"
     },
     "options_remove_client_data_title": {
         "message": "एक्स-क्लाइंट-डेटा हेडर निकालें"
@@ -553,12 +514,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "ट्रैकिंग पैरामीटर निकालें"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "ट्रैकिंग मापदंडों की कोमा से अलग सूची जो एडगार्ड पेज के पतों से हटाएगी।"
-    },
-    "options_cookies_title": {
-        "message": "कुकीज़"
     },
     "options_third_party_title": {
         "message": "तृतीय-पक्ष कुकीज़ का स्व-विनाश"

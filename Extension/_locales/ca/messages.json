@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Introduïu el nom del filtre"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Tots"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Habilitat"
     },
@@ -251,9 +248,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Auto-activació dels filtres"
     },
-    "filter_download_do_you_know": {
-        "message": "Sabieu?"
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -265,9 +259,6 @@
     },
     "filtering_log_search_string": {
         "message": "Entreu la paraula a cercar"
-    },
-    "filtering_refresh_tab": {
-        "message": "Refresqueu la pàgina web"
     },
     "filtering_type_all": {
         "message": "Tot"
@@ -316,9 +307,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "Apliqueu la regla a totes les pàgines web"
-    },
-    "filtering_modal_match_case": {
-        "message": "Considereu el cas"
     },
     "filtering_modal_third_party": {
         "message": "Aplica només a les peticions de terceres parts"
@@ -374,15 +362,6 @@
     "options_discuss": {
         "message": "Parleu sobre AdGuard"
     },
-    "options_miscellaneous_settings": {
-        "message": "Miscel·lanis"
-    },
-    "options_open_log": {
-        "message": "Registre del filtratge"
-    },
-    "options_reset_stats": {
-        "message": "Netegeu les estadístiques"
-    },
     "options_reset_stats_done": {
         "message": "Les estadístiques s'han netejat"
     },
@@ -406,9 +385,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Galetes de tercers modificades"
-    },
-    "options_send_not_track_desc": {
-        "message": "Eviteu que els llocs web us facin seguiment"
     },
     "short_name": {
         "message": "Filtre de publicitat d'AdGuard"

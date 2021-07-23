@@ -437,17 +437,11 @@
     "filtering_log_search_string": {
         "message": "Enter the search string"
     },
-    "filtering_log_preserve_log": {
-        "message": "Preserve log"
-    },
     "filtering_log_preserve_log_off": {
         "message": "Preserve log: OFF"
     },
     "filtering_log_preserve_log_on": {
         "message": "Preserve log: ON"
-    },
-    "filtering_refresh_tab": {
-        "message": "Refresh page"
     },
     "filtering_refresh_tab_short": {
         "message": "Refresh"
@@ -551,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "Apply the rule to all websites"
     },
-    "filtering_modal_match_case": {
-        "message": "Enable case-sensitivity"
-    },
     "filtering_modal_third_party": {
         "message": "Apply to third-party requests only"
     },
@@ -578,9 +569,6 @@
     "filtering_modal_copied": {
         "message": "Copied"
     },
-    "filtering_log_filter_title": {
-        "message": "Filter"
-    },
     "filtering_log_filter_processed": {
         "message": "Processed"
     },
@@ -598,12 +586,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "User filter"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "First party"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Third party"
     },
     "options_settings": {
         "message": "AdGuard Settings"
@@ -624,7 +606,7 @@
         "message": "Activate the most appropriate filters automatically"
     },
     "options_enable_autodetect_filter_desc": {
-        "message": "There are usually some language-specific filters"
+        "message": "Language-specific filters will turn on depending on the site language"
     },
     "options_select_theme": {
         "message": "Theme"
@@ -687,7 +669,7 @@
         "message": "Phishing and malware protection"
     },
     "options_safebrowsing_enabled_desc": {
-        "message": "Special filters that protect you from malicious and phishing websites. <a></a>"
+        "message": "Special filters that protect you from malicious and phishing websites. <a><\/a>"
     },
     "options_site": {
         "message": "Official Website"
@@ -794,6 +776,12 @@
     "options_strip_tracking_params_description": {
         "message": "When enabled, AdGuard URL Tracking filter is used to remove tracking parameters from pages' URLs."
     },
+    "options_block_known_trackers_title": {
+        "message": "Block known trackers"
+    },
+    "options_block_known_trackers_description": {
+        "message": "When enabled, AdGuard Tracking Protection filter is used to block known trackers."
+    },
     "options_third_party_title": {
         "message": "Self-destruction of third-party cookies"
     },
@@ -860,9 +848,6 @@
     "options_delete_filter_confirm": {
         "message": "Are you sure you want to delete this filter?"
     },
-    "filtering_type_content_type": {
-        "message": "Content type"
-    },
     "options_nav_better_than_extension": {
         "message": "Why is AdGuard full-fledged program better than extension?"
     },
@@ -885,7 +870,7 @@
         "message": "Protect your identity and sensitive personal info from thousands of online trackers by blocking all known popular tracking methods"
     },
     "group_description_social": {
-        "message": "Hide unwanted \"Like\"/\"Share\" buttons and other social media widgets"
+        "message": "Hide unwanted \"Like\"\/\"Share\" buttons and other social media widgets"
     },
     "group_description_annoyances": {
         "message": "Remove pop-up windows and other annoying notifications like cookie notices"
@@ -905,14 +890,11 @@
     "fullscreen_user_rules_title": {
         "message": "User rules"
     },
-    "options_user_rules_editor_stub_title":  {
+    "options_user_rules_editor_stub_title": {
         "message": "Editor already opened"
     },
     "options_user_rules_editor_stub_go_to_editor_button": {
         "message": "Go to editor"
-    },
-    "options_user_rules_editor_close_confirm": {
-        "message": "There are unsaved changes, are you sure?"
     },
     "options_editor_open_fullscreen_button_tooltip": {
         "message": "Open editor in fullscreen mode"
@@ -931,6 +913,9 @@
     },
     "options_reset_settings_confirm_modal_clear_button": {
         "message": "Reset"
+    },
+    "options_confirm_modal_cancel_button": {
+        "message": "Cancel"
     },
     "filtering_log_details_modal_beautify_button": {
         "message": "Beautify"

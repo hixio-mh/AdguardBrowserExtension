@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Nhập tên cho bộ lọc"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Tất cả"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Đã kích hoạt"
     },
@@ -170,14 +167,14 @@
     "options_filters_no_enabled": {
         "message": "Không có bộ lọc được kích hoạt"
     },
-    "options_filters_filter_trusted_tag": {
-        "message": "tin tưởng"
-    },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Bạn đã chọn tin tưởng bộ lọc này"
     },
     "options_add_custom_filter": {
         "message": "Thêm bộ lọc tuỳ chỉnh"
+    },
+    "options_empty_custom_filter": {
+        "message": "Hiện tại bạn không có bất kỳ bộ lọc tuỳ chỉnh nào"
     },
     "options_editor_indicator_saving": {
         "message": "Đang lưu..."
@@ -410,8 +407,11 @@
     "alert_popup_filter_enabled_desc": {
         "message": "%filter_name% đã được tự động kích hoạt"
     },
-    "filter_download_do_you_know": {
-        "message": "Bạn có biết?"
+    "filters_download_title": {
+        "message": "Dữ liệu bộ lọc đang tải..."
+    },
+    "filters_download_loading": {
+        "message": "Vui lòng đợi dữ liệu bộ lọc đang tải..."
     },
     "filtering_modal_element": {
         "message": "Phần tử:"
@@ -427,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Nhập chuỗi tìm kiếm"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Nhật ký bảo quản"
-    },
-    "filtering_refresh_tab": {
-        "message": "Làm mới trang"
     },
     "filtering_clear_log_events": {
         "message": "Xoá nhật ký"
@@ -460,6 +454,9 @@
     },
     "filtering_table_filter": {
         "message": "Bộ lọc"
+    },
+    "filtering_table_empty_reload_page_desc": {
+        "message": "<reset>vô hiệu hoá bộ lọc<\/reset> hoặc <refresh>tải lại trang<\/refresh> để xem nhật ký sự cố về bộ lọc đang dùng."
     },
     "filtering_modal_info_title": {
         "message": "Chi tiết yêu cầu"
@@ -506,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Áp dụng quy tắc với mọi website"
     },
-    "filtering_modal_match_case": {
-        "message": "Bật loại bỏ nội dung nhạy cảm"
-    },
     "filtering_modal_third_party": {
         "message": "Chỉ dành cho các yêu cầu của bên thứ ba"
     },
@@ -520,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Mở trong thẻ mới"
-    },
-    "filtering_log_filter_title": {
-        "message": "Bộ lọc"
     },
     "filtering_log_filter_regular": {
         "message": "Thông thường"
@@ -539,12 +530,6 @@
     "filtering_log_filter_user_rule": {
         "message": "Quy tắc của người dùng"
     },
-    "filtering_log_filter_first_party": {
-        "message": "Bên thứ nhất"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Bên thứ ba"
-    },
     "options_settings": {
         "message": "Cài đặt AdGuard"
     },
@@ -559,6 +544,18 @@
     },
     "options_enable_autodetect_filter": {
         "message": "Tự động kích hoạt những bộ lọc phù hợp nhất"
+    },
+    "options_select_theme": {
+        "message": "Chủ đề"
+    },
+    "options_theme_selector_system": {
+        "message": "Hệ thống"
+    },
+    "options_theme_selector_light": {
+        "message": "Sáng"
+    },
+    "options_theme_selector_dark": {
+        "message": "Tối"
     },
     "options_export_settings": {
         "message": "Xuất cài đặt"
@@ -605,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Gửi đánh giá!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Các cài đặt khác"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Hiện thông tin trên phiên bản AdGuard đầy đủ"
     },
     "options_show_app_updated_notification": {
         "message": "Thông báo về các bản cập nhật mở rộng"
-    },
-    "options_open_log": {
-        "message": "Nhật ký lọc"
-    },
-    "options_reset_stats": {
-        "message": "Đặt lại thống kê"
     },
     "options_reset_stats_done": {
         "message": "Thống kê đã được đặt lại"
@@ -650,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Ngăn chặn bên thứ ba từ bất cứ trang web nào bạn đã truy cập"
     },
-    "options_hide_search_queries_title": {
-        "message": "Ẩn bạn khỏi truy vấn tìm kiếm"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Ẩn truy vấn từ một công cụ tìm kiếm cho các trang web đã truy cập"
-    },
-    "options_send_not_track_title": {
-        "message": "Gửi tiêu đề chống theo dõi"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Các thông số theo dõi đã bị xoá"
     },
@@ -667,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Đã sửa đổi cookie của bên thứ ba"
-    },
-    "options_send_not_track_desc": {
-        "message": "Ngăn chặn các trang web theo dõi bạn"
     },
     "options_remove_client_data_title": {
         "message": "Xóa tiêu đề về dữ liệu của khách hàng"
@@ -685,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Xóa các thông số theo dõi"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Danh sách các tham số theo dõi được phân tách bằng dấu phẩy mà AdGuard sẽ xóa khỏi địa chỉ của các trang."
-    },
-    "options_cookies_title": {
-        "message": "Cookies"
     },
     "options_third_party_title": {
         "message": "Chặn cookie bên thứ ba"
@@ -758,7 +728,7 @@
     "options_delete_filter_confirm": {
         "message": "Bạn có chắc muốn xoá bộ lọc này?"
     },
-    "filtering_type_content_type": {
-        "message": "Nội dung mẫu"
+    "options_stealth_general_title": {
+        "message": "Chung"
     }
 }

@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Увядзіце імя фільтра"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Усе"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Уключана"
     },
@@ -169,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Фільтры не ўключаны"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "давераны"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Вы вырашылі давяраць гэтаму фільтру"
@@ -419,18 +413,6 @@
     "filters_download_loading": {
         "message": "Калі ласка, пачакайце ідзе запампоўка базы фільтраў..."
     },
-    "filter_download_do_you_know": {
-        "message": "А вы ведалі?"
-    },
-    "filters_download_sb_sites": {
-        "message": "У базе фішынгавых і шкодных сайтаў AdGuard<br\/>утрымваецца больш за мільён сайтаў."
-    },
-    "filters_download_rules": {
-        "message": "У сярэднім мы дадаём у рэкламныя фільтры больш за 100 новыя правілы ў тыдзень."
-    },
-    "filters_download_ads_malware": {
-        "message": "90% вірусаў і шкодных праграм шырацца<br\/>нядобрасумленнымі сецівамi з рэкламай."
-    },
     "filtering_modal_element": {
         "message": "Элемент:"
     },
@@ -445,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Увядзіце радок пошуку"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Захоўваць журнал"
-    },
-    "filtering_refresh_tab": {
-        "message": "Абнавіць старонку"
     },
     "filtering_clear_log_events": {
         "message": "Ачысціць журнал"
@@ -527,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Ужыць правіла для ўсіх сайтаў"
     },
-    "filtering_modal_match_case": {
-        "message": "Улічваць рэгістр знакаў"
-    },
     "filtering_modal_third_party": {
         "message": "Ужыць толькі да пабочных запытаў"
     },
@@ -541,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Адкрыць у новай укладцы"
-    },
-    "filtering_log_filter_title": {
-        "message": "Фільтр"
     },
     "filtering_log_filter_regular": {
         "message": "Звычайны"
@@ -559,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Карыстальніцкі фільтр"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Асноўныя"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Іншыя"
     },
     "options_settings": {
         "message": "Налады AdGuard"
@@ -638,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Ацаніце дадатак!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Рознае"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Паказваць інфармацыю аб поўнай версіі AdGuard"
     },
     "options_show_app_updated_notification": {
         "message": "Апавяшчаць аб абнаўленні пашырэння"
-    },
-    "options_open_log": {
-        "message": "Журнал фільтрацыі"
-    },
-    "options_reset_stats": {
-        "message": "Скінуць статыстыку"
     },
     "options_reset_stats_done": {
         "message": "Статыстыка абнулена"
@@ -683,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Прадухіліць раскрыццё для пабочных рэсурсаў сайтаў, якія вы наведваеце"
     },
-    "options_hide_search_queries_title": {
-        "message": "Схаваць пошукавыя запыты"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Хаваць запыты да сайтаў, наведаных з пошукавай сістэмы"
-    },
-    "options_send_not_track_title": {
-        "message": "Адпраўляць загаловак Do-Not-Track"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Параметры адсочвання выдалены"
     },
@@ -700,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Пабочны файл cookie зменены"
-    },
-    "options_send_not_track_desc": {
-        "message": "Прадухіліце адсочванне на сайтах"
     },
     "options_remove_client_data_title": {
         "message": "Выдаліць загаловак X-Client-Data"
@@ -718,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Выдаляць параметры адсочвання"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Спіс параметраў адсочвання з раздзяленнем коскай, якія AdGuard прыбярэ з адрасоў старонак."
-    },
-    "options_cookies_title": {
-        "message": "Файлы cookies"
     },
     "options_third_party_title": {
         "message": "Самазнішчэнне пабочных файлаў cookies"
@@ -791,7 +728,7 @@
     "options_delete_filter_confirm": {
         "message": "Вы ўпэўнены, што хочаце выдаліць дадзены фільтр?"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_stealth_general_title": {
+        "message": "Агульныя"
     }
 }

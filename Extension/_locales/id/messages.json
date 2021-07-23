@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Masukkan nama filter"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Semua"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Aktifkan"
     },
@@ -139,9 +136,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Tidak ada penyaring aktif"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "dipercaya"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Anda memilih untuk mempercayai penyaring ini"
@@ -353,9 +347,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Aktivasi otomatis penyaring"
     },
-    "filter_download_do_you_know": {
-        "message": "Tahukah anda?"
-    },
     "filtering_modal_element": {
         "message": "Elemen:"
     },
@@ -367,12 +358,6 @@
     },
     "filtering_log_search_string": {
         "message": "Masukkan string pencarian"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Pertahankan log"
-    },
-    "filtering_refresh_tab": {
-        "message": "Segarkan laman"
     },
     "filtering_type_all": {
         "message": "Semua"
@@ -421,9 +406,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "Terapkan aturan ke semua situs"
-    },
-    "filtering_modal_match_case": {
-        "message": "Pertimbangkan kasus"
     },
     "filtering_modal_third_party": {
         "message": "Terapkan hanya ke permintaan pihak ketiga"
@@ -482,17 +464,8 @@
     "options_discuss": {
         "message": "Diskusikan AdGuard"
     },
-    "options_miscellaneous_settings": {
-        "message": "Lainnya"
-    },
     "options_show_app_updated_notification": {
         "message": "Beritahu tentang pembaruan ekstensi"
-    },
-    "options_open_log": {
-        "message": "Log penyaringan"
-    },
-    "options_reset_stats": {
-        "message": "Ubah statistik"
     },
     "options_reset_stats_done": {
         "message": "Statistik telah dikembalikan"
@@ -518,15 +491,6 @@
     "options_hide_referrer_desc": {
         "message": "Cegah pihak ketiga mengtahui website apa yang Anda kunjungi"
     },
-    "options_hide_search_queries_title": {
-        "message": "Sembunyikan kueri pencarian"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Sembunyikan kueri website yang dikunjungi dari mesin pencari"
-    },
-    "options_send_not_track_title": {
-        "message": "Kirim header Do-Not-Track"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Parameter pelacak dihapus"
     },
@@ -535,9 +499,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Cookie pihak ketiga diubah"
-    },
-    "options_send_not_track_desc": {
-        "message": "Lindungi dari website yang melacak Anda"
     },
     "options_remove_client_data_title": {
         "message": "Hapus header X-Client-Data"
@@ -553,12 +514,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Hapus parameter pelacak"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Dipisahakn dengan koma untuk daftar dari pelacak yang mana AdGuard akan menghapusnya dari alamat halaman,"
-    },
-    "options_cookies_title": {
-        "message": "Kuki"
     },
     "options_third_party_title": {
         "message": "Penghancuran otomatis untuk kuki pihak ketika"

@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Įveskite filtro pavadinimą"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Visi"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Įjungti"
     },
@@ -149,6 +146,9 @@
     "options_select_update_period_disabled": {
         "message": "Išjungta"
     },
+    "options_filters": {
+        "message": "Filtrai"
+    },
     "options_antibanner_rules_count": {
         "message": "Filtrų skaičius: %rules_count%"
     },
@@ -166,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Filtrai išjungti"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "patikimas"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Jūs nusprendėte pasitikėti šiuo filtru"
@@ -410,8 +407,11 @@
     "alert_popup_filter_enabled_desc": {
         "message": "%filter_name% buvo aktyvuotas automatiškai"
     },
-    "filter_download_do_you_know": {
-        "message": "Ar žinojai?"
+    "filters_download_title": {
+        "message": "Įkeliama filtrų duomenų bazė..."
+    },
+    "filters_download_loading": {
+        "message": "Palaukite, vyksta filtrų duomenų bazės įkėlimas..."
     },
     "filtering_modal_element": {
         "message": "Elementas:"
@@ -427,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Įveskite paieškos eilutę"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Išsaugoti logą"
-    },
-    "filtering_refresh_tab": {
-        "message": "Atnaujinti puslapį"
     },
     "filtering_clear_log_events": {
         "message": "Išvalyti žurnalą"
@@ -509,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Pritaikyti taisyklę visoms svetainėms"
     },
-    "filtering_modal_match_case": {
-        "message": "Įgalinti jautrumą simbolių registrui"
-    },
     "filtering_modal_third_party": {
         "message": "Taikyti tik trečiųjų šalių užklausoms"
     },
@@ -523,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Atidaryti naujame skirtuke"
-    },
-    "filtering_log_filter_title": {
-        "message": "Filtras"
     },
     "filtering_log_filter_regular": {
         "message": "Įprastas"
@@ -541,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Naudotojo filtras"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Pagrindiniai"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Trečiųjų šalių"
     },
     "options_settings": {
         "message": "AdGuard nustatymai"
@@ -620,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Įvertinkite programėlę!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Įvairūs"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Rodyti informaciją AdGuard pilnoje versijoje"
     },
     "options_show_app_updated_notification": {
         "message": "Pranešti apie plėtinių naujinius"
-    },
-    "options_open_log": {
-        "message": "Filtravimo logas"
-    },
-    "options_reset_stats": {
-        "message": "Išvalyti statistiką"
     },
     "options_reset_stats_done": {
         "message": "Statistika sėkmingai pašalinta"
@@ -665,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Užkirsti kelią trečiosioms šalims žinoti, kokioje svetainėje lankotės"
     },
-    "options_hide_search_queries_title": {
-        "message": "Slėpti paieškos užklausas"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Slėpti užklausas, susijusias su svetainėmis, kurios buvo aplankytos iš paieškos sistemų"
-    },
-    "options_send_not_track_title": {
-        "message": "Siųsti antraštę „Do-Not-Track“"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Stebėjimo parametrai pašalinti"
     },
@@ -682,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Trečiųjų šalių slapukas pakeistas"
-    },
-    "options_send_not_track_desc": {
-        "message": "Neleisti svetainėms stebėti jus"
     },
     "options_remove_client_data_title": {
         "message": "Pašalinti X-Client-Data antraštę"
@@ -700,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Šalinti stebėjimo parametrus"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Kableliais atskirtas sekimo parametrų sąrašas, kurį AdGuard pašalins iš svetainių adresų."
-    },
-    "options_cookies_title": {
-        "message": "Slapukai"
     },
     "options_third_party_title": {
         "message": "Trečiųjų šalių slapukų sunaikinimas"
@@ -772,8 +727,5 @@
     },
     "options_delete_filter_confirm": {
         "message": "Ar tikrai norite ištrinti šį filtrą?"
-    },
-    "filtering_type_content_type": {
-        "message": "Content_type"
     }
 }

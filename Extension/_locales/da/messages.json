@@ -2,8 +2,8 @@
     "options_popup_title_placeholder": {
         "message": "Angiv et filternavn"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Alle"
+    "options_filters_list_search_display_option_all_filters": {
+        "message": "Alle filtre"
     },
     "options_filters_list_search_display_option_enabled": {
         "message": "Aktiveret"
@@ -28,6 +28,9 @@
     },
     "options_filters_filter_version": {
         "message": "version:"
+    },
+    "options_filters_filter_link": {
+        "message": "Gå til hjemmeside"
     },
     "options_filters_filter_updated": {
         "message": "opdateret:"
@@ -104,6 +107,9 @@
     "options_allowlist_invert_desc": {
         "message": "Afblokér annoncer overalt undtagen dem fra hvidlisten"
     },
+    "options_allowlist_alert_invert": {
+        "message": "Hvidliste er inverteret. Adblocking sker kun på websteder, som tilføjes den. <a>Deaktivér<\/a>"
+    },
     "options_userfilter": {
         "message": "Brugerregler"
     },
@@ -169,9 +175,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Ingen aktiverede filtre"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "har tillid til"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Du har valgt at have tillid til dette filter"
@@ -419,18 +422,6 @@
     "filters_download_loading": {
         "message": "Afvent at filterdatabasen indlæses..."
     },
-    "filter_download_do_you_know": {
-        "message": "Vidste du?"
-    },
-    "filters_download_sb_sites": {
-        "message": "AdGuards phishing- og -malware-database indeholder<br\/>mere end 1 million websteder."
-    },
-    "filters_download_rules": {
-        "message": "Ugentlig tilføjes i gennemsnit flere end 1.000 annoncefilterregler."
-    },
-    "filters_download_ads_malware": {
-        "message": "90% af ondsindet software og forskellige vira spredes<br\/>gennem skrupelløse annoncenetværk."
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -446,11 +437,14 @@
     "filtering_log_search_string": {
         "message": "Angiv søgestrengen"
     },
-    "filtering_log_preserve_log": {
-        "message": "Behold log"
+    "filtering_log_preserve_log_off": {
+        "message": "Behold log: FRA"
     },
-    "filtering_refresh_tab": {
-        "message": "Opfrisk side"
+    "filtering_log_preserve_log_on": {
+        "message": "Behold log: TIL"
+    },
+    "filtering_refresh_tab_short": {
+        "message": "Opfrisk"
     },
     "filtering_clear_log_events": {
         "message": "Ryd log"
@@ -466,6 +460,9 @@
     },
     "filtering_type_other": {
         "message": "Andet"
+    },
+    "filtering_table_status": {
+        "message": "Status"
     },
     "filtering_table_type": {
         "message": "Type"
@@ -485,6 +482,9 @@
     "filtering_modal_info_title": {
         "message": "Anmod om detaljer"
     },
+    "filtering_modal_preview_title": {
+        "message": "Forhåndsvisning"
+    },
     "filtering_modal_type": {
         "message": "Type:"
     },
@@ -503,17 +503,35 @@
     "filtering_modal_block": {
         "message": "Blokér"
     },
+    "filtering_modal_block_again": {
+        "message": "Blokér igen"
+    },
     "filtering_modal_unblock": {
         "message": "Afblokér"
     },
     "filtering_modal_remove_user": {
         "message": "Fjern fra Brugerregler"
     },
+    "filtering_modal_preview_request_button": {
+        "message": "Forhåndsvisning"
+    },
     "filtering_modal_remove_allowlist": {
         "message": "Fjern fra hvidlisten"
     },
     "filtering_modal_add_title": {
         "message": "Tilføjelse af en regel"
+    },
+    "filtering_modal_status_text_desc": {
+        "message": "Status:"
+    },
+    "filtering_modal_status_text_error": {
+        "message": "Intet svar modtaget"
+    },
+    "filtering_modal_status_text_loading": {
+        "message": "Indlæser..."
+    },
+    "filtering_modal_filtering_status_text_desc": {
+        "message": "Filtreringsstatus:"
     },
     "filtering_modal_rule_text_desc": {
         "message": "Regeltekst:"
@@ -527,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "Anvend reglen på alle websteder"
     },
-    "filtering_modal_match_case": {
-        "message": "Aktiver versalfølsomhed"
-    },
     "filtering_modal_third_party": {
         "message": "Anvend kun på tredjeparts anmodninger"
     },
@@ -542,8 +557,20 @@
     "filtering_modal_open_in_new_tab": {
         "message": "Åbn i en ny fane"
     },
-    "filtering_log_filter_title": {
-        "message": "Filter"
+    "filtering_modal_show_full_url": {
+        "message": "Vis komplet URL"
+    },
+    "filtering_modal_hide_full_url": {
+        "message": "Skjul komplet URL"
+    },
+    "filtering_modal_copy_to_clipboard": {
+        "message": "Kopiér til udklipsholder"
+    },
+    "filtering_modal_copied": {
+        "message": "Kopieret"
+    },
+    "filtering_log_filter_processed": {
+        "message": "Behandlet"
     },
     "filtering_log_filter_regular": {
         "message": "Almindelig"
@@ -560,12 +587,6 @@
     "filtering_log_filter_user_rule": {
         "message": "Brugerfilter"
     },
-    "filtering_log_filter_first_party": {
-        "message": "Førstepart"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Tredjepart"
-    },
     "options_settings": {
         "message": "AdGuard Indstillinger"
     },
@@ -575,11 +596,17 @@
     "options_allow_acceptable_ads": {
         "message": "Tillad søgningsreklamer og selvpromovering af websteder"
     },
+    "options_allow_acceptable_ads_desc": {
+        "message": "Søgeannoncer er dem, som ses blandt resultaterne af en søgeforespørgsel ved brug af en online-søgemaskine såsom Google, Bing, DuckDuckGo mv. <a><\/a>"
+    },
     "options_show_blocked_ads_count_title": {
         "message": "Vis antal afblokerede annoncer på AdGuard-udvidelsesikonet"
     },
     "options_enable_autodetect_filter": {
         "message": "Aktivér de mest passende filtre automatisk"
+    },
+    "options_enable_autodetect_filter_desc": {
+        "message": "Sprogspecifikke filtre aktiveres afhængigt af sproget på webstedet"
     },
     "options_select_theme": {
         "message": "Tema"
@@ -605,8 +632,17 @@
     "options_update_antibanner_filters": {
         "message": "Søg efter filteropdateringer"
     },
+    "options_check_update": {
+        "message": "Søg efter opdateringer"
+    },
+    "options_check_update_progress": {
+        "message": "Tjekker..."
+    },
     "options_set_update_interval": {
         "message": "Filtrenes opdateringsinterval"
+    },
+    "options_set_update_interval_desc": {
+        "message": "For en mere effektiv blokering bør filtre opdateres regelmæssigt"
     },
     "options_userfilter_export": {
         "message": "Eksportér"
@@ -620,11 +656,20 @@
     "options_userfilter_description_key": {
         "message": "Dine egne regler kan tilføjes her. Muligheden anbefales til avancerede brugere med kendskab til HTML\/CSS. Læs i <a> filterregler-guiden<\/a> om, hvordan du selv skriver filterregler."
     },
+    "options_userfilter_line_break_off": {
+        "message": "Linjeskift: FRA"
+    },
+    "options_userfilter_line_break_on": {
+        "message": "Linjeskift: TIL"
+    },
     "options_open_changelog": {
         "message": "Ændringslog"
     },
     "options_safebrowsing_enabled": {
         "message": "Phishing- og malware-beskyttelse"
+    },
+    "options_safebrowsing_enabled_desc": {
+        "message": "Specialfiltre, som beskytter mod websteder med ondsindet og phishing indhold. <a><\/a>"
     },
     "options_site": {
         "message": "Officielt websted"
@@ -639,7 +684,7 @@
         "message": "Bedøm den!"
     },
     "options_miscellaneous_settings": {
-        "message": "Diverse"
+        "message": "Yderligere indstillinger"
     },
     "options_show_adguard_full_version_title": {
         "message": "Vis information om den fulde AdGuard-version"
@@ -648,13 +693,22 @@
         "message": "Notificér om udvidelsesopdateringer"
     },
     "options_open_log": {
-        "message": "Filtreringslog"
+        "message": "Åbn filtreringslog"
     },
     "options_reset_stats": {
-        "message": "Nulstil statistikker"
+        "message": "Ryd statistikker"
     },
     "options_reset_stats_done": {
         "message": "Statistikkerne er blevet nulstillet"
+    },
+    "options_reset_settings": {
+        "message": "Nulstil indstillinger"
+    },
+    "options_reset_settings_done": {
+        "message": "Indstillingerne er nulstillet"
+    },
+    "options_reset_settings_error": {
+        "message": "Fejl under nulstilling af indstillinger"
     },
     "options_collect_hit_stats_title": {
         "message": "Indsend statistikker for brugen af annoncefiltrene"
@@ -684,13 +738,16 @@
         "message": "Forhindre tredjeparter i at vide, hvilken websteder du besøger"
     },
     "options_hide_search_queries_title": {
-        "message": "Skjul dine søgninger"
+        "message": "Skjul dine søgeforespørgsler"
     },
     "options_hide_search_queries_desc": {
-        "message": "Skjul søgninger for websteder besøgt fra en søgemaskine"
+        "message": "Skjul forespørgslerne for websteder besøgt fra en søgemaskine"
     },
     "options_send_not_track_title": {
-        "message": "Send Do-Not-Track header"
+        "message": "Send websteder Spor ikke-signaler"
+    },
+    "options_send_not_track_desc": {
+        "message": "Send <gpc>Global Privacy Control<\/gpc> og <dnt>Do Not Track<\/dnt> signaler til websteder, som besøges"
     },
     "options_stripped_tracking_parameters": {
         "message": "Sporingsparametre fjernet"
@@ -700,9 +757,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Tredjepartscookie modificeret"
-    },
-    "options_send_not_track_desc": {
-        "message": "Forhindre websteder i at spore dig"
     },
     "options_remove_client_data_title": {
         "message": "Fjern X-Client-Data header"
@@ -719,11 +773,14 @@
     "options_strip_tracking_params_title": {
         "message": "Fjern sporingsparametre"
     },
-    "options_strip_tracking_params_desc": {
-        "message": "Kommasepareret liste over sporingsparametre, som AdGuard fjerner fra sidernes adresser."
+    "options_strip_tracking_params_description": {
+        "message": "Når aktiveret, bruges AdGuard URL Tracking-filteret til at fjerne sporingsparametre fra side-URL'er."
     },
-    "options_cookies_title": {
-        "message": "Cookies"
+    "options_block_known_trackers_title": {
+        "message": "Blokér kendte trackere"
+    },
+    "options_block_known_trackers_description": {
+        "message": "Når det er aktiveret, bruges AdGuard Tracking Protection-filteret til at blokere kendte trackere."
     },
     "options_third_party_title": {
         "message": "Selvdestruerende tredjepartscookies"
@@ -791,7 +848,100 @@
     "options_delete_filter_confirm": {
         "message": "Sikker på, at du vil slette dette filter?"
     },
-    "filtering_type_content_type": {
-        "message": "Indholdstype"
+    "options_nav_better_than_extension": {
+        "message": "Hvorfor er det komplette AdGuard-program bedre end udvidelse?"
+    },
+    "options_nav_compare": {
+        "message": "Deres indbyrdes forskelle"
+    },
+    "options_nav_hide": {
+        "message": "Skjul"
+    },
+    "options_filters_search": {
+        "message": "Søg"
+    },
+    "options_about_title": {
+        "message": "AdGuard Browser-udvidelse"
+    },
+    "group_description_adblocking": {
+        "message": "Opsæt adblocking hér for at håndtere irriterende bannere, pop op-vinduer, videoannoncer mv. én gang for alle"
+    },
+    "group_description_stealth": {
+        "message": "Beskyt identiteten og følsomme personoplysninger mod tusinder af online-trackere ved at blokere de mest populære sporingsmetoder"
+    },
+    "group_description_social": {
+        "message": "Skjul uønskede \"Like\"-\/\"Del\"-knapper og andre sociale medier-widgets"
+    },
+    "group_description_annoyances": {
+        "message": "Fjern pop op-vinduer og andre irriterende notifikationer såsom f.eks. cookie-notitser"
+    },
+    "group_description_security": {
+        "message": "Vær beskyttet mod malware, phishing og andre online-trusler"
+    },
+    "group_description_miscellaneous": {
+        "message": "Flere indstillinger til at yderligere at opsætte websurfingen med AdGuard"
+    },
+    "group_description_custom": {
+        "message": "Opret egne filtre for at finjustere webfiltrering efter egne præferencer"
+    },
+    "group_description_lang": {
+        "message": "Vær ikke begrænset — brug adblocking på websteder på ethvert sprog"
+    },
+    "fullscreen_user_rules_title": {
+        "message": "Brugerregler"
+    },
+    "options_user_rules_editor_stub_title": {
+        "message": "Editor allerede åbnet"
+    },
+    "options_user_rules_editor_stub_go_to_editor_button": {
+        "message": "Gå til editor"
+    },
+    "options_editor_open_fullscreen_button_tooltip": {
+        "message": "Åbn editor i fuldskærmstilstand"
+    },
+    "options_editor_close_fullscreen_button_tooltip": {
+        "message": "Luk editor fuldskærmstilstand"
+    },
+    "options_clear_stats_confirm_modal_title": {
+        "message": "Ryd statistikker?"
+    },
+    "options_clear_stats_confirm_modal_clear_button": {
+        "message": "Ryd"
+    },
+    "options_reset_settings_confirm_modal_title": {
+        "message": "Nulstil indstillinger?"
+    },
+    "options_reset_settings_confirm_modal_clear_button": {
+        "message": "Nulstil"
+    },
+    "filtering_log_details_modal_beautify_button": {
+        "message": "Forskøn"
+    },
+    "filtering_log_details_modal_back_button": {
+        "message": "Retur til forespørgsel"
+    },
+    "filtering_log_details_modal_try_again": {
+        "message": "Forsøg igen"
+    },
+    "filtering_log_tooltip_first_party": {
+        "message": "Førstepartsforespørgsler"
+    },
+    "filtering_log_tooltip_third_party": {
+        "message": "Tredjepartsforespørgsler"
+    },
+    "filtering_log_tooltip_multiple_filters_mac": {
+        "message": "Tryk og hold på Cmd for filtermultivalg"
+    },
+    "filtering_log_tooltip_multiple_filters_win": {
+        "message": "Tryk og hold på Ctrl for filtermultivalg"
+    },
+    "options_stealth_general_title": {
+        "message": "Generelt"
+    },
+    "options_stealth_cookies_title": {
+        "message": "Cookies"
+    },
+    "options_stealth_miscellaneous_title": {
+        "message": "Diverse"
     }
 }

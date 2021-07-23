@@ -2,8 +2,8 @@
     "options_popup_title_placeholder": {
         "message": "フィルタ名を入力"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "すべて"
+    "options_filters_list_search_display_option_all_filters": {
+        "message": "全フィルタ"
     },
     "options_filters_list_search_display_option_enabled": {
         "message": "有効"
@@ -28,6 +28,9 @@
     },
     "options_filters_filter_version": {
         "message": "バージョン："
+    },
+    "options_filters_filter_link": {
+        "message": "このフィルタのホームページへ"
     },
     "options_filters_filter_updated": {
         "message": "最終更新日時："
@@ -104,6 +107,9 @@
     "options_allowlist_invert_desc": {
         "message": "ホワイトリスト以外のすべてのサイトで広告をブロックしないようにします"
     },
+    "options_allowlist_alert_invert": {
+        "message": "ホワイトリスト逆転中（リストにあるサイトでのみ広告をブロック）。<a>逆転をオフにする<\/a>"
+    },
     "options_userfilter": {
         "message": "ユーザールール"
     },
@@ -169,9 +175,6 @@
     },
     "options_filters_no_enabled": {
         "message": "有効フィルタはありません"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "信頼できる"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "あなたはこのフィルタを信頼するようにしました"
@@ -419,18 +422,6 @@
     "filters_download_loading": {
         "message": "フィルタデータベースを読み込み中です。少々お待ちください…"
     },
-    "filter_download_do_you_know": {
-        "message": "ご存知ですか？"
-    },
-    "filters_download_sb_sites": {
-        "message": "AdGuardのフィッシングとマルウェアのデータベースには<br\/>100万以上のウェブサイトが登録されています。"
-    },
-    "filters_download_rules": {
-        "message": "平均で1000件以上の広告フィルタルールを毎週追加しています。"
-    },
-    "filters_download_ads_malware": {
-        "message": "ウイルスや悪質なソフトウェアの90％は、非良心的な<br\/>広告ネットワークを介して配信されます。"
-    },
     "filtering_modal_element": {
         "message": "要素："
     },
@@ -446,11 +437,14 @@
     "filtering_log_search_string": {
         "message": "検索語句を入力してください"
     },
-    "filtering_log_preserve_log": {
-        "message": "ログを保存する"
+    "filtering_log_preserve_log_off": {
+        "message": "ログを保存: OFF"
     },
-    "filtering_refresh_tab": {
-        "message": "ページを更新する"
+    "filtering_log_preserve_log_on": {
+        "message": "ログを保存: ON"
+    },
+    "filtering_refresh_tab_short": {
+        "message": "更新する"
     },
     "filtering_clear_log_events": {
         "message": "ログをクリアする"
@@ -466,6 +460,9 @@
     },
     "filtering_type_other": {
         "message": "その他"
+    },
+    "filtering_table_status": {
+        "message": "ステータス"
     },
     "filtering_table_type": {
         "message": "種類"
@@ -485,6 +482,9 @@
     "filtering_modal_info_title": {
         "message": "詳細情報の確認"
     },
+    "filtering_modal_preview_title": {
+        "message": "プレビュー"
+    },
     "filtering_modal_type": {
         "message": "種類:"
     },
@@ -503,17 +503,35 @@
     "filtering_modal_block": {
         "message": "ブロックする"
     },
+    "filtering_modal_block_again": {
+        "message": "再度ブロックする"
+    },
     "filtering_modal_unblock": {
         "message": "ブロックを解除する"
     },
     "filtering_modal_remove_user": {
         "message": "ユーザールールから除去する"
     },
+    "filtering_modal_preview_request_button": {
+        "message": "プレビュー"
+    },
     "filtering_modal_remove_allowlist": {
         "message": "ホワイトリストから削除する"
     },
     "filtering_modal_add_title": {
         "message": "ルールの追加"
+    },
+    "filtering_modal_status_text_desc": {
+        "message": "ステータス:"
+    },
+    "filtering_modal_status_text_error": {
+        "message": "応答なし"
+    },
+    "filtering_modal_status_text_loading": {
+        "message": "読み込み中…"
+    },
+    "filtering_modal_filtering_status_text_desc": {
+        "message": "フィルタリングステータス:"
     },
     "filtering_modal_rule_text_desc": {
         "message": "ルールテキスト:"
@@ -527,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "全てのウェブサイトにこのルールを適用"
     },
-    "filtering_modal_match_case": {
-        "message": "大文字と小文字の区別を有効にする"
-    },
     "filtering_modal_third_party": {
         "message": "サードパーティのリクエストのみに適用"
     },
@@ -542,8 +557,20 @@
     "filtering_modal_open_in_new_tab": {
         "message": "新しいタブで開く"
     },
-    "filtering_log_filter_title": {
-        "message": "フィルタ"
+    "filtering_modal_show_full_url": {
+        "message": "フルURLを表示する"
+    },
+    "filtering_modal_hide_full_url": {
+        "message": "フルURLを非表示にする"
+    },
+    "filtering_modal_copy_to_clipboard": {
+        "message": "クリップボードにコピー"
+    },
+    "filtering_modal_copied": {
+        "message": "コピー済み"
+    },
+    "filtering_log_filter_processed": {
+        "message": "処理済み"
     },
     "filtering_log_filter_regular": {
         "message": "通常"
@@ -560,12 +587,6 @@
     "filtering_log_filter_user_rule": {
         "message": "ユーザーフィルタ"
     },
-    "filtering_log_filter_first_party": {
-        "message": "ファーストパーティ"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "サードパーティ"
-    },
     "options_settings": {
         "message": "AdGuard 設定"
     },
@@ -575,11 +596,17 @@
     "options_allow_acceptable_ads": {
         "message": "検索広告とウェブサイトの自己宣伝を許可する"
     },
+    "options_allow_acceptable_ads_desc": {
+        "message": "検索広告とは、Google、Yahoo、Bing、DuckDuckGoなどのオンライン検索エンジンを使用した際に、検索結果の中に表示される広告のことです。<a><\/a>"
+    },
     "options_show_blocked_ads_count_title": {
         "message": "AdGuard拡張機能アイコンで広告ブロック数を表示する"
     },
     "options_enable_autodetect_filter": {
-        "message": "最も適切なフィルタを自動的に有効にする"
+        "message": "適切な言語フィルタを自動的に有効にする"
+    },
+    "options_enable_autodetect_filter_desc": {
+        "message": "訪問したサイトの言語によって言語固有フィルタが自動的に有効になります。"
     },
     "options_select_theme": {
         "message": "カラーテーマ"
@@ -605,8 +632,17 @@
     "options_update_antibanner_filters": {
         "message": "フィルタのアップデートを確認する"
     },
+    "options_check_update": {
+        "message": "フィルタ更新を確認する"
+    },
+    "options_check_update_progress": {
+        "message": "確認中…"
+    },
     "options_set_update_interval": {
         "message": "フィルタ更新期間"
+    },
+    "options_set_update_interval_desc": {
+        "message": "より効果的にブロックするためには、フィルタを頻繁に更新する必要があります。"
     },
     "options_userfilter_export": {
         "message": "エクスポート"
@@ -620,11 +656,20 @@
     "options_userfilter_description_key": {
         "message": "ここで独自のルールを追加することができます。このオプションは、HTML\/CSSに精通した上級ユーザーにお勧めです。独自のフィルタールールの書き方を学ぶには<a>こちらのフィルタールール作成方法説明<\/a> を読んでください。"
     },
+    "options_userfilter_line_break_off": {
+        "message": "改行: OFF"
+    },
+    "options_userfilter_line_break_on": {
+        "message": "改行: ON"
+    },
     "options_open_changelog": {
         "message": "チェンジログ"
     },
     "options_safebrowsing_enabled": {
         "message": "フィッシング詐欺とマルウェアからの保護"
+    },
+    "options_safebrowsing_enabled_desc": {
+        "message": "悪意のあるウェブサイトやフィッシング詐欺サイトからあなたを守る専用フィルタです。<a><\/a>"
     },
     "options_site": {
         "message": "公式ウェブサイト"
@@ -639,7 +684,7 @@
         "message": "評価する！"
     },
     "options_miscellaneous_settings": {
-        "message": "その他の設定"
+        "message": "追加設定"
     },
     "options_show_adguard_full_version_title": {
         "message": "AdGuardフルバージョンの情報を表示する"
@@ -648,13 +693,22 @@
         "message": "拡張機能のアップデートについて通知を受け取る"
     },
     "options_open_log": {
-        "message": "フィルタリングログ"
+        "message": "フィルタリングログを開く"
     },
     "options_reset_stats": {
-        "message": "統計をリセット"
+        "message": "統計をクリア"
     },
     "options_reset_stats_done": {
         "message": "統計がリセットされました。"
+    },
+    "options_reset_settings": {
+        "message": "設定をリセットする"
+    },
+    "options_reset_settings_done": {
+        "message": "設定がリセットされました。"
+    },
+    "options_reset_settings_error": {
+        "message": "設定のリセット中にエラーが発生しました"
     },
     "options_collect_hit_stats_title": {
         "message": "広告フィルタの使用状況の統計を送信する"
@@ -684,13 +738,16 @@
         "message": "第三者があなたの訪問しているウェブサイトを知ることがないようにします"
     },
     "options_hide_search_queries_title": {
-        "message": "検索クエリを隠す"
+        "message": "自分の検索クエリを隠す"
     },
     "options_hide_search_queries_desc": {
-        "message": "検索エンジンから訪問したウェブサイトに対するクエリを隠します"
+        "message": "検索エンジンから訪問したウェブサイトに対するクエリを隠します。"
     },
     "options_send_not_track_title": {
-        "message": "Do-Not-Trackヘッダを送信する"
+        "message": "サイトに「追跡しないで」シグナルを送信する"
+    },
+    "options_send_not_track_desc": {
+        "message": "あなたがアクセスする各ウェブサイトに<gpc>Global Privacy Control<\/gpc>およびトラッキング拒否（<dnt>Do Not Track<\/dnt>）シグナルを送信します。"
     },
     "options_stripped_tracking_parameters": {
         "message": "追跡パラメータ除去済み"
@@ -700,9 +757,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "サードパーティクッキー変更済み"
-    },
-    "options_send_not_track_desc": {
-        "message": "ウェブサイトがあなたを追跡しないようにします"
     },
     "options_remove_client_data_title": {
         "message": "X-Client-Dataヘッダーを削除する"
@@ -719,11 +773,14 @@
     "options_strip_tracking_params_title": {
         "message": "追跡パラメータを削除する"
     },
-    "options_strip_tracking_params_desc": {
-        "message": "AdGuardがページのアドレスから削除するトラッキングパラメータのカンマ区切りリスト。"
+    "options_strip_tracking_params_description": {
+        "message": "有効の場合、AdGuard URL追跡防止フィルタがページのURLから追跡パラメーターを取り除きます。"
     },
-    "options_cookies_title": {
-        "message": "クッキー"
+    "options_block_known_trackers_title": {
+        "message": "既知のすべての追跡をブロックする"
+    },
+    "options_block_known_trackers_description": {
+        "message": "有効にすると、「AdGuard追跡防止フィルタ」が既知のトラッカー（個人情報追跡ソフトウェア）をブロックするために使用されます。"
     },
     "options_third_party_title": {
         "message": "サードパーティクッキーの自動削除"
@@ -791,7 +848,100 @@
     "options_delete_filter_confirm": {
         "message": "このフィルタを削除してもよろしいですか？"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_nav_better_than_extension": {
+        "message": "アプリ版AdGuardが拡張機能版よりも優れている理由は？"
+    },
+    "options_nav_compare": {
+        "message": "比較を見る"
+    },
+    "options_nav_hide": {
+        "message": "非表示"
+    },
+    "options_filters_search": {
+        "message": "検索"
+    },
+    "options_about_title": {
+        "message": "AdGuardブラウザ拡張機能"
+    },
+    "group_description_adblocking": {
+        "message": "こちらで広告ブロックを設定して、迷惑なバナー、ポップアップ、ビデオ広告などすべてを一掃することができます。"
+    },
+    "group_description_stealth": {
+        "message": "何千ものオンライントラッカーからあなたの個人情報を保護するために、普及している追跡方法をすべてブロックします。"
+    },
+    "group_description_social": {
+        "message": "迷惑な「いいね！」や「シェア」ボタンとその他のソーシャルメディア・ウィジェットを非表示にします。"
+    },
+    "group_description_annoyances": {
+        "message": "ポップアップウィンドウやクッキー通知などのような煩わしい通知を削除すします。"
+    },
+    "group_description_security": {
+        "message": "マルウェア、フィッシング詐欺やその他のオンライン危険から保護します。"
+    },
+    "group_description_miscellaneous": {
+        "message": "AdGuardを使用したウェブサーフィンをさらに微調整できる追加設定です。"
+    },
+    "group_description_custom": {
+        "message": "独自のフィルタを作成・追加することで、ご自身に合わせてフィルタリング（広告ブロック）をさらにカスタマイズすることができます。"
+    },
+    "group_description_lang": {
+        "message": "どの言語のウェブサイトでも広告をブロックすることができます。"
+    },
+    "fullscreen_user_rules_title": {
+        "message": "ユーザールール"
+    },
+    "options_user_rules_editor_stub_title": {
+        "message": "エディタは既に開かれています"
+    },
+    "options_user_rules_editor_stub_go_to_editor_button": {
+        "message": "ルールエディタへ行く"
+    },
+    "options_editor_open_fullscreen_button_tooltip": {
+        "message": "フルスクリーンモードでエディタを開く"
+    },
+    "options_editor_close_fullscreen_button_tooltip": {
+        "message": "エディタのフルスクリーンモードを閉じる"
+    },
+    "options_clear_stats_confirm_modal_title": {
+        "message": "統計をクリア（初期化）しますか？"
+    },
+    "options_clear_stats_confirm_modal_clear_button": {
+        "message": "クリア"
+    },
+    "options_reset_settings_confirm_modal_title": {
+        "message": "設定をリセット（初期化）しますか?"
+    },
+    "options_reset_settings_confirm_modal_clear_button": {
+        "message": "リセット"
+    },
+    "filtering_log_details_modal_beautify_button": {
+        "message": "見やすくする"
+    },
+    "filtering_log_details_modal_back_button": {
+        "message": "リクエストへ戻る"
+    },
+    "filtering_log_details_modal_try_again": {
+        "message": "再試行する"
+    },
+    "filtering_log_tooltip_first_party": {
+        "message": "ファーストパーティリクエスト"
+    },
+    "filtering_log_tooltip_third_party": {
+        "message": "サードパーティリクエスト"
+    },
+    "filtering_log_tooltip_multiple_filters_mac": {
+        "message": "Cmdを押しながら複数のフィルターを選択"
+    },
+    "filtering_log_tooltip_multiple_filters_win": {
+        "message": "Ctrlを押しながら複数のフィルターを選択"
+    },
+    "options_stealth_general_title": {
+        "message": "一般"
+    },
+    "options_stealth_cookies_title": {
+        "message": "クッキー"
+    },
+    "options_stealth_miscellaneous_title": {
+        "message": "その他"
     }
 }

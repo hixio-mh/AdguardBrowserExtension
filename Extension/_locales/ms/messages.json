@@ -86,9 +86,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Auto-aktifkan penyaring"
     },
-    "filter_download_do_you_know": {
-        "message": "Adakah anda tahu?"
-    },
     "filtering_modal_important": {
         "message": "Beri keutamaan lebih tinggi kepada peraturan"
     },
@@ -97,9 +94,6 @@
     },
     "filtering_log_search_string": {
         "message": "Masukkan kata carian"
-    },
-    "filtering_refresh_tab": {
-        "message": "Buka kembali laman"
     },
     "filtering_type_all": {
         "message": "Semua"
@@ -143,9 +137,6 @@
     "filtering_modal_apply_domains": {
         "message": "Tetapkan peraturan kepada semua laman web"
     },
-    "filtering_modal_match_case": {
-        "message": "Pertimbangkan kes"
-    },
     "filtering_modal_third_party": {
         "message": "Tetapkan kepada permintaan pihak ketiga sahaja"
     },
@@ -187,15 +178,6 @@
     },
     "options_site": {
         "message": "Laman Web Rasmi"
-    },
-    "options_miscellaneous_settings": {
-        "message": "Pelbagai"
-    },
-    "options_open_log": {
-        "message": "Log penyaringan"
-    },
-    "options_reset_stats": {
-        "message": "Padam statistik"
     },
     "options_reset_stats_done": {
         "message": "Statistik telah dipadam"

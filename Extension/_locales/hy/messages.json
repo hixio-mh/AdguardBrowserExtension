@@ -86,9 +86,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Զտիչների ինքնաակտիվացում"
     },
-    "filter_download_do_you_know": {
-        "message": "Գիտե՞ք, որ"
-    },
     "filtering_modal_important": {
         "message": "Բարձր առաջնահերթություն տալ կանոնին"
     },
@@ -97,9 +94,6 @@
     },
     "filtering_log_search_string": {
         "message": "Մուտքագրել որոնում"
-    },
-    "filtering_refresh_tab": {
-        "message": "Թարմացնել էջը"
     },
     "filtering_type_all": {
         "message": "Բոլորը"
@@ -146,9 +140,6 @@
     "filtering_modal_apply_domains": {
         "message": "Կիրառել կանոնը բոլոր կայքերին"
     },
-    "filtering_modal_match_case": {
-        "message": "Դիտարկել գործը"
-    },
     "filtering_modal_third_party": {
         "message": "Կիրառել միայն երրորդ կողմի հարցումներին"
     },
@@ -190,15 +181,6 @@
     },
     "options_site": {
         "message": "Պաշտոնական կայք"
-    },
-    "options_miscellaneous_settings": {
-        "message": "Խառը"
-    },
-    "options_open_log": {
-        "message": "Զտիչների մատյան"
-    },
-    "options_reset_stats": {
-        "message": "Վերակայել վիճակագրությունը"
     },
     "options_reset_stats_done": {
         "message": "Վիճակագրությունը վերակայված է"

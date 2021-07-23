@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "ใส่ชื่อตัวกรอง"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "ทั้งหมด"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "เปิดใช้งาน"
     },
@@ -139,9 +136,6 @@
     },
     "options_filters_no_enabled": {
         "message": "ไม่มีตัวกรองที่เปิดใช้งาน"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "เชื่อถือได้"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "คุณเลือกที่จะเชื่อถือตัวกรองนี้"
@@ -344,9 +338,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "เปิดใช้งานตัวกรองอัตโนมัติ"
     },
-    "filter_download_do_you_know": {
-        "message": "รู้หรือไม่?"
-    },
     "filtering_modal_element": {
         "message": "องค์ประกอบ:"
     },
@@ -358,12 +349,6 @@
     },
     "filtering_log_search_string": {
         "message": "ใส่สตริงการค้นหา"
-    },
-    "filtering_log_preserve_log": {
-        "message": "เก็บรักษาบันทึก"
-    },
-    "filtering_refresh_tab": {
-        "message": "รีเฟรชหน้า"
     },
     "filtering_type_all": {
         "message": "ทั้งหมด"
@@ -412,9 +397,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "ใช้กฎกับเว็บไซต์ทั้งหมด"
-    },
-    "filtering_modal_match_case": {
-        "message": "เปิดใช้งานกรณีอ่อนไหว"
     },
     "filtering_modal_third_party": {
         "message": "ใช้กับคำขอของบุคคลที่สามเท่านั้น"
@@ -473,17 +455,8 @@
     "options_discuss": {
         "message": "พูดคุย AdGuard"
     },
-    "options_miscellaneous_settings": {
-        "message": "เบ็ดเตล็ด"
-    },
     "options_show_app_updated_notification": {
         "message": "แจ้งเตือนเกี่ยวกับการอัปเดตส่วนขยาย"
-    },
-    "options_open_log": {
-        "message": "บันทึกการกรอง"
-    },
-    "options_reset_stats": {
-        "message": "รีเซ็ตสถิติ"
     },
     "options_reset_stats_done": {
         "message": "รีเซ็ตสถิติแล้ว"
@@ -509,15 +482,6 @@
     "options_hide_referrer_desc": {
         "message": "ป้องกันบุคคลที่สามไม่ให้รู้ว่าคุณกำลังเยี่ยมชมเว็บไซต์ใด ๆ"
     },
-    "options_hide_search_queries_title": {
-        "message": "ซ่อนคำค้นหาของคุณ"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "ซ่อนข้อความค้นหาสำหรับเว็บไซต์ที่เข้าชมจากเครื่องมือค้นหา"
-    },
-    "options_send_not_track_title": {
-        "message": "ส่งส่วนหัว อย่า-ติด-ตาม"
-    },
     "options_stripped_tracking_parameters": {
         "message": "ลบพารามิเตอร์การติดตามออกแล้ว"
     },
@@ -526,9 +490,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "แก้ไขคุกกี้ของบุคคลที่สามแล้ว"
-    },
-    "options_send_not_track_desc": {
-        "message": "ป้องกันไม่ให้เว็บไซต์ติดตามคุณ"
     },
     "options_remove_client_data_title": {
         "message": "เอา X-Client-Data header ออก"
@@ -544,12 +505,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "เอาพารามิเตอร์การติดตามออก"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "รายการพารามิเตอร์การติดตามที่คั่นด้วยเครื่องหมายจุลภาคซึ่ง AdGuard จะลบออกจากที่อยู่ของหน้าเว็บ"
-    },
-    "options_cookies_title": {
-        "message": "คุกกี้"
     },
     "options_third_party_title": {
         "message": "ทำลายคุกกี้บุคคลที่สามด้วยตนเอง"

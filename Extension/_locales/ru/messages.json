@@ -2,8 +2,8 @@
     "options_popup_title_placeholder": {
         "message": "Введите название фильтра"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Все"
+    "options_filters_list_search_display_option_all_filters": {
+        "message": "Все фильтры"
     },
     "options_filters_list_search_display_option_enabled": {
         "message": "Включенные"
@@ -28,6 +28,9 @@
     },
     "options_filters_filter_version": {
         "message": "Версия:"
+    },
+    "options_filters_filter_link": {
+        "message": "На главную"
     },
     "options_filters_filter_updated": {
         "message": "Обновлен:"
@@ -104,6 +107,9 @@
     "options_allowlist_invert_desc": {
         "message": "Разблокировать рекламу везде, кроме сайтов из белого списка"
     },
+    "options_allowlist_alert_invert": {
+        "message": "Белый список инвертирован. Реклама блокируется только на сайтах из списка. <a>Отключить<\/a>"
+    },
     "options_userfilter": {
         "message": "Пользовательские правила"
     },
@@ -169,9 +175,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Фильтры выключены"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "доверенный"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Вы решили доверять этому фильтру"
@@ -419,18 +422,6 @@
     "filters_download_loading": {
         "message": "Пожалуйста, подождите. Идет загрузка базы фильтров..."
     },
-    "filter_download_do_you_know": {
-        "message": "Знаете ли вы, что..."
-    },
-    "filters_download_sb_sites": {
-        "message": "В базе фишинговых и вредоносных сайтов AdGuard<br\/>содержится более миллиона сайтов."
-    },
-    "filters_download_rules": {
-        "message": "В среднем мы добавляем в рекламные фильтры больше 100 новых правил в неделю."
-    },
-    "filters_download_ads_malware": {
-        "message": "90% вирусов и вредоносных программ распространяются<br\/>недобросовестными рекламными сетями."
-    },
     "filtering_modal_element": {
         "message": "Элемент:"
     },
@@ -446,11 +437,14 @@
     "filtering_log_search_string": {
         "message": "Введите строку поиска"
     },
-    "filtering_log_preserve_log": {
-        "message": "Сохранять журнал"
+    "filtering_log_preserve_log_off": {
+        "message": "Сохранять журнал: НЕТ"
     },
-    "filtering_refresh_tab": {
-        "message": "Обновить страницу"
+    "filtering_log_preserve_log_on": {
+        "message": "Сохранять журнал: ДА"
+    },
+    "filtering_refresh_tab_short": {
+        "message": "Обновить"
     },
     "filtering_clear_log_events": {
         "message": "Очистить журнал"
@@ -466,6 +460,9 @@
     },
     "filtering_type_other": {
         "message": "Прочее"
+    },
+    "filtering_table_status": {
+        "message": "Статус"
     },
     "filtering_table_type": {
         "message": "Тип"
@@ -485,6 +482,9 @@
     "filtering_modal_info_title": {
         "message": "Информация о запросе"
     },
+    "filtering_modal_preview_title": {
+        "message": "Предпросмотр"
+    },
     "filtering_modal_type": {
         "message": "Тип:"
     },
@@ -503,17 +503,35 @@
     "filtering_modal_block": {
         "message": "Заблокировать"
     },
+    "filtering_modal_block_again": {
+        "message": "Заблокировать снова"
+    },
     "filtering_modal_unblock": {
         "message": "Разблокировать"
     },
     "filtering_modal_remove_user": {
         "message": "Удалить из Пользовательских правил"
     },
+    "filtering_modal_preview_request_button": {
+        "message": "Предпросмотр"
+    },
     "filtering_modal_remove_allowlist": {
         "message": "Удалить из белого списка"
     },
     "filtering_modal_add_title": {
         "message": "Добавление правила"
+    },
+    "filtering_modal_status_text_desc": {
+        "message": "Статус:"
+    },
+    "filtering_modal_status_text_error": {
+        "message": "Ответа не получено"
+    },
+    "filtering_modal_status_text_loading": {
+        "message": "Загрузка..."
+    },
+    "filtering_modal_filtering_status_text_desc": {
+        "message": "Статус фильтрации:"
     },
     "filtering_modal_rule_text_desc": {
         "message": "Текст правила:"
@@ -527,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "Применить правило для всех сайтов"
     },
-    "filtering_modal_match_case": {
-        "message": "Учитывать регистр символов"
-    },
     "filtering_modal_third_party": {
         "message": "Применять только к запросам на сторонние ресурсы"
     },
@@ -542,8 +557,20 @@
     "filtering_modal_open_in_new_tab": {
         "message": "Открыть в новой вкладке"
     },
-    "filtering_log_filter_title": {
-        "message": "Фильтры"
+    "filtering_modal_show_full_url": {
+        "message": "Показать полный URL"
+    },
+    "filtering_modal_hide_full_url": {
+        "message": "Скрыть полный URL"
+    },
+    "filtering_modal_copy_to_clipboard": {
+        "message": "Копировать"
+    },
+    "filtering_modal_copied": {
+        "message": "Скопировано"
+    },
+    "filtering_log_filter_processed": {
+        "message": "Обработано"
     },
     "filtering_log_filter_regular": {
         "message": "Обычные"
@@ -560,12 +587,6 @@
     "filtering_log_filter_user_rule": {
         "message": "Пользовательские фильтры"
     },
-    "filtering_log_filter_first_party": {
-        "message": "Основные"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Сторонние"
-    },
     "options_settings": {
         "message": "Настройки AdGuard"
     },
@@ -575,11 +596,17 @@
     "options_allow_acceptable_ads": {
         "message": "Разрешить поисковую рекламу и собственную рекламу сайтов"
     },
+    "options_allow_acceptable_ads_desc": {
+        "message": "Поисковая реклама — это реклама, которую вы видите среди результатов поиска при использовании поисковой системы в Интернете, такой как Google, Bing, DuckDuckGo и т.д. <a><\/a>"
+    },
     "options_show_blocked_ads_count_title": {
         "message": "Показывать количество заблокированной рекламы на иконке расширения AdGuard"
     },
     "options_enable_autodetect_filter": {
         "message": "Автоматически подключать наиболее подходящие фильтры"
+    },
+    "options_enable_autodetect_filter_desc": {
+        "message": "Фильтры для конкретных языков будут включаться в зависимости от языка сайта"
     },
     "options_select_theme": {
         "message": "Тема"
@@ -605,8 +632,17 @@
     "options_update_antibanner_filters": {
         "message": "Проверить обновления фильтров"
     },
+    "options_check_update": {
+        "message": "Проверить обновления"
+    },
+    "options_check_update_progress": {
+        "message": "Проверка..."
+    },
     "options_set_update_interval": {
         "message": "Интервал обновления фильтров"
+    },
+    "options_set_update_interval_desc": {
+        "message": "Для более эффективной блокировки фильтры необходимо регулярно обновлять"
     },
     "options_userfilter_export": {
         "message": "Экспорт"
@@ -620,11 +656,20 @@
     "options_userfilter_description_key": {
         "message": "Здесь вы можете добавлять свои правила. Эта опция рекомендована для продвинутых пользователей, знакомых с HTML\/CSS. Прочитайте <a>руководство<\/a>, чтобы научиться составлять свои правила фильтрации."
     },
+    "options_userfilter_line_break_off": {
+        "message": "Перенос строки отключен"
+    },
+    "options_userfilter_line_break_on": {
+        "message": "Перенос строки включен"
+    },
     "options_open_changelog": {
         "message": "Список изменений"
     },
     "options_safebrowsing_enabled": {
         "message": "Защита от фишинговых и вредоносных сайтов"
+    },
+    "options_safebrowsing_enabled_desc": {
+        "message": "Специальные фильтры, защищающие от вредоносных и фишинговых сайтов. <a><\/a>"
     },
     "options_site": {
         "message": "Официальный сайт"
@@ -648,13 +693,22 @@
         "message": "Уведомлять об обновлениях расширения"
     },
     "options_open_log": {
-        "message": "Журнал фильтрации"
+        "message": "Открыть журнал фильтрации"
     },
     "options_reset_stats": {
         "message": "Сбросить статистику"
     },
     "options_reset_stats_done": {
         "message": "Статистика сброшена"
+    },
+    "options_reset_settings": {
+        "message": "Сбросить настройки"
+    },
+    "options_reset_settings_done": {
+        "message": "Настройки сброшены"
+    },
+    "options_reset_settings_error": {
+        "message": "Ошибка при сбросе настроек"
     },
     "options_collect_hit_stats_title": {
         "message": "Отправлять статистику использования фильтров"
@@ -687,10 +741,13 @@
         "message": "Скрывать поисковые запросы"
     },
     "options_hide_search_queries_desc": {
-        "message": "Скрывать посещенные веб-сайты из поисковой системы."
+        "message": "Скрывать запросы для сайтов, на которые вы пришли из поисковой системы"
     },
     "options_send_not_track_title": {
-        "message": "Отправлять заголовок Do-Not-Track"
+        "message": "Отправлять сайтам сигналы о неотслеживании"
+    },
+    "options_send_not_track_desc": {
+        "message": "Отправлять сигналы <gpc>Global Privacy Control<\/gpc> и <dnt>Do Not Track<\/dnt> посещаемым веб-сайтам."
     },
     "options_stripped_tracking_parameters": {
         "message": "Параметры отслеживания удалены"
@@ -700,9 +757,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Сторонние файлы cookie изменены"
-    },
-    "options_send_not_track_desc": {
-        "message": "Запретить веб-сайтам отслеживать вас."
     },
     "options_remove_client_data_title": {
         "message": "Удалять заголовок X-Client-Data"
@@ -719,11 +773,14 @@
     "options_strip_tracking_params_title": {
         "message": "Удалять параметры отслеживания"
     },
-    "options_strip_tracking_params_desc": {
-        "message": "Cписок параметров отслеживания, которые AdGuard будет удалять из адресов страниц."
+    "options_strip_tracking_params_description": {
+        "message": "Если эта опция включена, фильтр отслеживания по URL удаляет параметры отслеживания из адресов страниц."
     },
-    "options_cookies_title": {
-        "message": "Cookies"
+    "options_block_known_trackers_title": {
+        "message": "Блокировать известные трекеры"
+    },
+    "options_block_known_trackers_description": {
+        "message": "Если эта опция включена, специальный фильтр борется со всеми известными следящими счетчиками и системами аналитики."
     },
     "options_third_party_title": {
         "message": "Самоуничтожение сторонних файлов cookies"
@@ -768,7 +825,7 @@
         "message": "AdGuard Антибаннер"
     },
     "options_about": {
-        "message": "О нас"
+        "message": "О программе"
     },
     "options_license_agreement": {
         "message": "Договор публичной оферты"
@@ -791,7 +848,100 @@
     "options_delete_filter_confirm": {
         "message": "Вы уверены, что хотите удалить данный фильтр?"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_nav_better_than_extension": {
+        "message": "Почему полнофункциональная программа AdGuard лучше расширения?"
+    },
+    "options_nav_compare": {
+        "message": "В чем разница"
+    },
+    "options_nav_hide": {
+        "message": "Скрыть"
+    },
+    "options_filters_search": {
+        "message": "Поиск"
+    },
+    "options_about_title": {
+        "message": "Браузерное расширение AdGuard"
+    },
+    "group_description_adblocking": {
+        "message": "Настройте блокировку рекламы, чтобы раз и навсегда избавиться от надоедливых баннеров, всплывающих окон, видеорекламы и прочих раздражителей"
+    },
+    "group_description_stealth": {
+        "message": "Защитите личные данные от онлайн-трекеров, заблокировав все известные популярные методы отслеживания"
+    },
+    "group_description_social": {
+        "message": "Скройте ненужные кнопки «Нравится»\/«Поделиться» и другие виджеты социальных сетей"
+    },
+    "group_description_annoyances": {
+        "message": "Уберите всплывающие окна и другие раздражающие уведомления, например уведомления о файлах cookie"
+    },
+    "group_description_security": {
+        "message": "Защитите себя от вредоносных программ, фишинга и других онлайн-угроз"
+    },
+    "group_description_miscellaneous": {
+        "message": "Дополнительные настройки, чтобы сделать веб-серфинг ещё более удобным с помощью AdGuard"
+    },
+    "group_description_custom": {
+        "message": "Создавайте свои фильтры, чтобы еще более детально настроить веб-фильтрацию под себя"
+    },
+    "group_description_lang": {
+        "message": "Не ограничивайте себя — блокируйте рекламу на сайтах на любых языках"
+    },
+    "fullscreen_user_rules_title": {
+        "message": "Пользовательские правила"
+    },
+    "options_user_rules_editor_stub_title": {
+        "message": "Редактор уже открыт"
+    },
+    "options_user_rules_editor_stub_go_to_editor_button": {
+        "message": "Перейти в редактор"
+    },
+    "options_editor_open_fullscreen_button_tooltip": {
+        "message": "Открыть в полноэкранном режиме"
+    },
+    "options_editor_close_fullscreen_button_tooltip": {
+        "message": "Выйти из полноэкранного режима"
+    },
+    "options_clear_stats_confirm_modal_title": {
+        "message": "Очистить статистику?"
+    },
+    "options_clear_stats_confirm_modal_clear_button": {
+        "message": "Очистить"
+    },
+    "options_reset_settings_confirm_modal_title": {
+        "message": "Сбросить настройки?"
+    },
+    "options_reset_settings_confirm_modal_clear_button": {
+        "message": "Сбросить"
+    },
+    "filtering_log_details_modal_beautify_button": {
+        "message": "Оптимизировать"
+    },
+    "filtering_log_details_modal_back_button": {
+        "message": "Назад к запросу"
+    },
+    "filtering_log_details_modal_try_again": {
+        "message": "Попробовать снова"
+    },
+    "filtering_log_tooltip_first_party": {
+        "message": "Внутренние запросы"
+    },
+    "filtering_log_tooltip_third_party": {
+        "message": "Сторонние запросы"
+    },
+    "filtering_log_tooltip_multiple_filters_mac": {
+        "message": "Удерживайте Cmd, чтобы выбрать несколько фильтров"
+    },
+    "filtering_log_tooltip_multiple_filters_win": {
+        "message": "Удерживайте Ctrl, чтобы выбрать несколько фильтров"
+    },
+    "options_stealth_general_title": {
+        "message": "Общие"
+    },
+    "options_stealth_cookies_title": {
+        "message": "Файлы Cookie"
+    },
+    "options_stealth_miscellaneous_title": {
+        "message": "Разное"
     }
 }

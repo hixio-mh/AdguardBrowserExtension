@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Skriv in ett namn på filtret"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Alla"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Inkopplat"
     },
@@ -139,9 +136,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Inga inkopplade filter"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "tillförlitlig"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Du har valt att lita på det här filtret"
@@ -344,9 +338,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Autoinkoppling av filter"
     },
-    "filter_download_do_you_know": {
-        "message": "Kände du till?"
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -358,12 +349,6 @@
     },
     "filtering_log_search_string": {
         "message": "Skriv in söksträngen"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Spara logg"
-    },
-    "filtering_refresh_tab": {
-        "message": "Läs in sidan igen"
     },
     "filtering_type_all": {
         "message": "Allt"
@@ -412,9 +397,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "Tillämpa regeln på alla webbplatser"
-    },
-    "filtering_modal_match_case": {
-        "message": "Skall överväga"
     },
     "filtering_modal_third_party": {
         "message": "Tillämpa på endast tredjepartsförfrågningar"
@@ -473,17 +455,8 @@
     "options_discuss": {
         "message": "Diskutera AdGuard"
     },
-    "options_miscellaneous_settings": {
-        "message": "Diverse"
-    },
     "options_show_app_updated_notification": {
         "message": "Avisera om tilläggsuppdateringar"
-    },
-    "options_open_log": {
-        "message": "Filtreringslogg"
-    },
-    "options_reset_stats": {
-        "message": "Nollställ statistiken"
     },
     "options_reset_stats_done": {
         "message": "Statistik har nollställts"
@@ -509,15 +482,6 @@
     "options_hide_referrer_desc": {
         "message": "Förhindra tredjepartsaktörers åtkomst till din webbhistorik"
     },
-    "options_hide_search_queries_title": {
-        "message": "Dölj dina sökfrågor"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Döljer anrop på webbsidor som besöks via en sökmotor"
-    },
-    "options_send_not_track_title": {
-        "message": "Skicka Do-Not-Track header"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Spårningsparametrar borttagna"
     },
@@ -526,9 +490,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Tredjepartscookie modifierad"
-    },
-    "options_send_not_track_desc": {
-        "message": "Förhindrar webbsidor att spåra dig"
     },
     "options_remove_client_data_title": {
         "message": "Ta bort X-Client-Data header"
@@ -544,12 +505,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Ta bort spårningsparametrar"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "En kommaseparerad list på parametrar som AdGuard kommer att ta bort från webbsideadresser."
-    },
-    "options_cookies_title": {
-        "message": "Kakor"
     },
     "options_third_party_title": {
         "message": "Självraderande tredjepartscookies"

@@ -2,8 +2,8 @@
     "options_popup_title_placeholder": {
         "message": "Wprowadź nazwę filtra"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Wszystko"
+    "options_filters_list_search_display_option_all_filters": {
+        "message": "Wszystkie filtry"
     },
     "options_filters_list_search_display_option_enabled": {
         "message": "Włączone"
@@ -28,6 +28,9 @@
     },
     "options_filters_filter_version": {
         "message": "wersja:"
+    },
+    "options_filters_filter_link": {
+        "message": "Wróć do strony głównej"
     },
     "options_filters_filter_updated": {
         "message": "zaktualizowano:"
@@ -104,6 +107,9 @@
     "options_allowlist_invert_desc": {
         "message": "Odblokuj reklamy wszędzie za wyjątkiem listy dozwolonych"
     },
+    "options_allowlist_alert_invert": {
+        "message": "Lista dozwolonych jest odwrócona. Reklamy są blokowane tylko na stronach do niej dodanych. <a>Dezaktywuj<\/a>"
+    },
     "options_userfilter": {
         "message": "Reguły użytkownika"
     },
@@ -169,9 +175,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Brak włączonych filtrów"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "zaufany"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Zdecydowałeś zaufać temu filtrowi"
@@ -419,18 +422,6 @@
     "filters_download_loading": {
         "message": "Proszę czekać, trwa ładowanie bazy danych filtrów..."
     },
-    "filter_download_do_you_know": {
-        "message": "Czy wiedziałeś?"
-    },
-    "filters_download_sb_sites": {
-        "message": "Baza danych phishingu i złośliwego oprogramowania AdGuard zawiera<br\/>ponad 1 milion stron internetowych."
-    },
-    "filters_download_rules": {
-        "message": "Średnio co tydzień dodajemy ponad 1000 reguł filtrowania reklam."
-    },
-    "filters_download_ads_malware": {
-        "message": "90% złośliwego oprogramowania i różnych wirusów rozprzestrzenia się<br\/>poprzez pozbawione skrupułów sieci reklamowe."
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -446,11 +437,14 @@
     "filtering_log_search_string": {
         "message": "Wpisz tekst do wyszukania"
     },
-    "filtering_log_preserve_log": {
-        "message": "Zachowaj dziennik zdarzeń"
+    "filtering_log_preserve_log_off": {
+        "message": "Zachowaj dziennik: WYŁ"
     },
-    "filtering_refresh_tab": {
-        "message": "Odśwież stronę"
+    "filtering_log_preserve_log_on": {
+        "message": "Zachowaj dziennik: WŁ"
+    },
+    "filtering_refresh_tab_short": {
+        "message": "Odśwież"
     },
     "filtering_clear_log_events": {
         "message": "Wyczyść dziennik"
@@ -466,6 +460,9 @@
     },
     "filtering_type_other": {
         "message": "Inne"
+    },
+    "filtering_table_status": {
+        "message": "Stan"
     },
     "filtering_table_type": {
         "message": "Typ"
@@ -485,6 +482,9 @@
     "filtering_modal_info_title": {
         "message": "Szczegóły żądania"
     },
+    "filtering_modal_preview_title": {
+        "message": "Podgląd"
+    },
     "filtering_modal_type": {
         "message": "Typ:"
     },
@@ -503,17 +503,35 @@
     "filtering_modal_block": {
         "message": "Blokuj"
     },
+    "filtering_modal_block_again": {
+        "message": "Zablokuj ponownie"
+    },
     "filtering_modal_unblock": {
         "message": "Odblokuj"
     },
     "filtering_modal_remove_user": {
         "message": "Usuń z reguł użytkownika"
     },
+    "filtering_modal_preview_request_button": {
+        "message": "Podgląd"
+    },
     "filtering_modal_remove_allowlist": {
         "message": "Usuń z listy dozwolonych"
     },
     "filtering_modal_add_title": {
         "message": "Dodawanie reguły"
+    },
+    "filtering_modal_status_text_desc": {
+        "message": "Stan:"
+    },
+    "filtering_modal_status_text_error": {
+        "message": "Nie otrzymano odpowiedzi"
+    },
+    "filtering_modal_status_text_loading": {
+        "message": "Ładowanie..."
+    },
+    "filtering_modal_filtering_status_text_desc": {
+        "message": "Stan filtrowania:"
     },
     "filtering_modal_rule_text_desc": {
         "message": "Tekst reguły:"
@@ -527,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "Zastosuj tę regułę dla wszystkich stron"
     },
-    "filtering_modal_match_case": {
-        "message": "Uwzględniaj wielkość liter"
-    },
     "filtering_modal_third_party": {
         "message": "Zastosuj tylko dla żądań firm trzecich"
     },
@@ -542,8 +557,20 @@
     "filtering_modal_open_in_new_tab": {
         "message": "Otwórz w nowej karcie"
     },
-    "filtering_log_filter_title": {
-        "message": "Filtr"
+    "filtering_modal_show_full_url": {
+        "message": "Pokaż pełny adres URL"
+    },
+    "filtering_modal_hide_full_url": {
+        "message": "Ukryj pełny adres URL"
+    },
+    "filtering_modal_copy_to_clipboard": {
+        "message": "Kopiuj do schowka"
+    },
+    "filtering_modal_copied": {
+        "message": "Skopiowano"
+    },
+    "filtering_log_filter_processed": {
+        "message": "Przetworzony"
     },
     "filtering_log_filter_regular": {
         "message": "Regularny"
@@ -560,12 +587,6 @@
     "filtering_log_filter_user_rule": {
         "message": "Filtr użytkownika"
     },
-    "filtering_log_filter_first_party": {
-        "message": "Firm pierwszych"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Firm trzecich"
-    },
     "options_settings": {
         "message": "Ustawienia AdGuard"
     },
@@ -575,11 +596,17 @@
     "options_allow_acceptable_ads": {
         "message": "Nie blokuj pożądanych reklam"
     },
+    "options_allow_acceptable_ads_desc": {
+        "message": "Reklamy wyszukiwania to reklamy, które widać wśród wyników wyszukiwania podczas korzystania z wyszukiwarki internetowej, takiej jak Google, Bing, DuckDuckGo itp. <a><\/a>"
+    },
     "options_show_blocked_ads_count_title": {
         "message": "Pokazuj liczbę zablokowanych reklam na ikonie rozszerzenia AdGuard"
     },
     "options_enable_autodetect_filter": {
         "message": "Automatycznie aktywuj najbardziej odpowiednie filtry"
+    },
+    "options_enable_autodetect_filter_desc": {
+        "message": "Filtry językowe zostaną włączone w zależności od języka witryny"
     },
     "options_select_theme": {
         "message": "Motyw"
@@ -605,8 +632,17 @@
     "options_update_antibanner_filters": {
         "message": "Sprawdź aktualizacje filtrów"
     },
+    "options_check_update": {
+        "message": "Sprawdź aktualizacje"
+    },
+    "options_check_update_progress": {
+        "message": "Sprawdzanie..."
+    },
     "options_set_update_interval": {
         "message": "Interwał aktualizacji filtrów"
+    },
+    "options_set_update_interval_desc": {
+        "message": "Aby zapewnić skuteczniejsze blokowanie, filtry należy regularnie aktualizować"
     },
     "options_userfilter_export": {
         "message": "Eksportuj"
@@ -620,11 +656,20 @@
     "options_userfilter_description_key": {
         "message": "Tutaj możesz dodać własne reguły. Ta opcja jest zalecana dla zaawansowanych użytkowników znających HTML\/CSS. Przeczytaj <a>samouczek dotyczący reguł filtrowania<\/a>, aby dowiedzieć się, jak napisać własne reguły filtrowania."
     },
+    "options_userfilter_line_break_off": {
+        "message": "Koniec linii: WYŁ"
+    },
+    "options_userfilter_line_break_on": {
+        "message": "Koniec linii: WŁ"
+    },
     "options_open_changelog": {
         "message": "Historia zmian"
     },
     "options_safebrowsing_enabled": {
         "message": "Ochrona przed phishingiem i malware"
+    },
+    "options_safebrowsing_enabled_desc": {
+        "message": "Specjalne filtry chroniące przed złośliwymi i wyłudzającymi informacje stronami internetowymi. <a><\/a>"
     },
     "options_site": {
         "message": "Oficjalna strona"
@@ -639,7 +684,7 @@
         "message": "Oceń nas!"
     },
     "options_miscellaneous_settings": {
-        "message": "Inne opcje"
+        "message": "Dodatkowe ustawienia"
     },
     "options_show_adguard_full_version_title": {
         "message": "Pokaż informacje o pełnej wersji AdGuard"
@@ -648,13 +693,22 @@
         "message": "Powiadamiaj o aktualizacjach rozszerzenia"
     },
     "options_open_log": {
-        "message": "Raport filtrowania"
+        "message": "Otwórz dziennik filtrowania"
     },
     "options_reset_stats": {
-        "message": "Opróżnij statystyki"
+        "message": "Wyczyść statystyki"
     },
     "options_reset_stats_done": {
         "message": "Statystyki zostały opróżnione"
+    },
+    "options_reset_settings": {
+        "message": "Resetuj ustawienia"
+    },
+    "options_reset_settings_done": {
+        "message": "Ustawienia zostały zresetowane"
+    },
+    "options_reset_settings_error": {
+        "message": "Błąd podczas resetowania ustawień"
     },
     "options_collect_hit_stats_title": {
         "message": "Wysyłaj statystyki użycia filtrów reklam"
@@ -684,13 +738,16 @@
         "message": "Uniemożliwia osobom trzecim poznanie odwiedzanej przez ciebie witryny"
     },
     "options_hide_search_queries_title": {
-        "message": "Ukryj swoje wyszukiwane hasła"
+        "message": "Ukryj swoje zapytania do wyszukiwarki"
     },
     "options_hide_search_queries_desc": {
-        "message": "Z witryn odwiedzonych przez wyszukiwarki internetowe"
+        "message": "Ukrywanie zapytań dla stron odwiedzanych z wyszukiwarki"
     },
     "options_send_not_track_title": {
-        "message": "Wysyłaj nagłówek Do-Not-Track"
+        "message": "Wysyłaj sygnały stron internetowych, aby Cię nie śledziły"
+    },
+    "options_send_not_track_desc": {
+        "message": "Wysyłanie sygnałów <gpc>Global Privacy Control<\/gpc> i <dnt>Do Not Track<\/dnt> do odwiedzanych przez Ciebie witryn internetowych"
     },
     "options_stripped_tracking_parameters": {
         "message": "Usunięto parametry śledzenia"
@@ -700,9 +757,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Zmodyfikowany plik cookie firm trzecich"
-    },
-    "options_send_not_track_desc": {
-        "message": "Zapobiega śledzeniu ciebie przez strony internetowe"
     },
     "options_remove_client_data_title": {
         "message": "Usuń nagłówek X-Client-Data"
@@ -719,11 +773,14 @@
     "options_strip_tracking_params_title": {
         "message": "Usunięto parametry śledzenia"
     },
-    "options_strip_tracking_params_desc": {
-        "message": "Lista rozdzielanych przecinkami parametrów śledzenia, które AdGuard usunie z adresów stron."
+    "options_strip_tracking_params_description": {
+        "message": "Po włączeniu, filtr śledzenia URL AdGuard jest używany do usuwania parametrów śledzenia z adresów URL stron."
     },
-    "options_cookies_title": {
-        "message": "Ciasteczka"
+    "options_block_known_trackers_title": {
+        "message": "Blokuj znane trackery"
+    },
+    "options_block_known_trackers_description": {
+        "message": "Po włączeniu, Filtr elementów szpiegujących AdGuard jest używany do blokowania znanych trackerów."
     },
     "options_third_party_title": {
         "message": "Samoniszczące ciasteczka firm trzecich"
@@ -791,7 +848,100 @@
     "options_delete_filter_confirm": {
         "message": "Czy na pewno chcesz usunąć ten filtr?"
     },
-    "filtering_type_content_type": {
-        "message": "Treść_typu"
+    "options_nav_better_than_extension": {
+        "message": "Dlaczego pełnoprawny program AdGuard jest lepszy niż rozszerzenie?"
+    },
+    "options_nav_compare": {
+        "message": "Jak się mają do siebie"
+    },
+    "options_nav_hide": {
+        "message": "Ukryj"
+    },
+    "options_filters_search": {
+        "message": "Wyszukaj"
+    },
+    "options_about_title": {
+        "message": "Rozszerzenie przeglądarki AdGuard"
+    },
+    "group_description_adblocking": {
+        "message": "Skonfiguruj blokowanie reklam, aby raz na zawsze rozprawić się z irytującymi banerami, wyskakującymi okienkami, reklamami wideo i tym podobnymi"
+    },
+    "group_description_stealth": {
+        "message": "Chroń swoją tożsamość i poufne dane osobowe przed tysiącami internetowych narzędzi śledzących, blokując wszystkie znane popularne metody śledzenia"
+    },
+    "group_description_social": {
+        "message": "Ukryj niechciane przyciski „Lubię to”\/„Udostępnij” i inne widżety mediów społecznościowych"
+    },
+    "group_description_annoyances": {
+        "message": "Usuń wyskakujące okienka i inne irytujące powiadomienia, takie jak powiadomienia o plikach cookie"
+    },
+    "group_description_security": {
+        "message": "Chroń się przed złośliwym oprogramowaniem, phishingiem i innymi zagrożeniami internetowymi"
+    },
+    "group_description_miscellaneous": {
+        "message": "Więcej ustawień, aby jeszcze lepiej skonfigurować przeglądanie stron internetowych z AdGuard"
+    },
+    "group_description_custom": {
+        "message": "Twórz własne filtry, aby dostosować filtrowanie stron internetowych do swoich preferencji"
+    },
+    "group_description_lang": {
+        "message": "Nie ograniczaj się — blokuj reklamy na stronach internetowych w dowolnym języku"
+    },
+    "fullscreen_user_rules_title": {
+        "message": "Reguły użytkownika"
+    },
+    "options_user_rules_editor_stub_title": {
+        "message": "Edytor jest już otwarty"
+    },
+    "options_user_rules_editor_stub_go_to_editor_button": {
+        "message": "Przejdź do edytora"
+    },
+    "options_editor_open_fullscreen_button_tooltip": {
+        "message": "Otwórz edytor w trybie pełnoekranowym"
+    },
+    "options_editor_close_fullscreen_button_tooltip": {
+        "message": "Zamknij tryb pełnoekranowy edytora"
+    },
+    "options_clear_stats_confirm_modal_title": {
+        "message": "Wyczyść statystyki?"
+    },
+    "options_clear_stats_confirm_modal_clear_button": {
+        "message": "Wyczyść"
+    },
+    "options_reset_settings_confirm_modal_title": {
+        "message": "Zresetować ustawienia?"
+    },
+    "options_reset_settings_confirm_modal_clear_button": {
+        "message": "Zresetuj"
+    },
+    "filtering_log_details_modal_beautify_button": {
+        "message": "Upiększ"
+    },
+    "filtering_log_details_modal_back_button": {
+        "message": "Powrót do żądania"
+    },
+    "filtering_log_details_modal_try_again": {
+        "message": "Spróbuj ponownie"
+    },
+    "filtering_log_tooltip_first_party": {
+        "message": "Żądania własne"
+    },
+    "filtering_log_tooltip_third_party": {
+        "message": "Żądania stron trzecich"
+    },
+    "filtering_log_tooltip_multiple_filters_mac": {
+        "message": "Przytrzymaj Cmd, aby wybrać wiele filtrów"
+    },
+    "filtering_log_tooltip_multiple_filters_win": {
+        "message": "Przytrzymaj Ctrl, aby wybrać wiele filtrów"
+    },
+    "options_stealth_general_title": {
+        "message": "Ogólne"
+    },
+    "options_stealth_cookies_title": {
+        "message": "Ciasteczka"
+    },
+    "options_stealth_miscellaneous_title": {
+        "message": "Różne"
     }
 }

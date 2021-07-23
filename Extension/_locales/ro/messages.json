@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Introduceți numele filtrului"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Toate"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Pornit"
     },
@@ -96,7 +93,7 @@
         "message": "Listă autorizări"
     },
     "options_allowlist_desc": {
-        "message": "AdGuard nu filtrează site-urile web din lista de autorizări."
+        "message": "AdGuard nu filtrează site-urile web din Lista de Autorizări."
     },
     "options_allowlist_invert": {
         "message": "Inversare listă de autorizări"
@@ -149,6 +146,9 @@
     "options_select_update_period_disabled": {
         "message": "Dezactivat"
     },
+    "options_filters": {
+        "message": "Filtre"
+    },
     "options_antibanner_rules_count": {
         "message": "Număr de reguli de filtrare: %rules_count%"
     },
@@ -166,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Niciun filtru activat"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "de încredere"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Ați ales să credeți acest filtru"
@@ -410,8 +407,11 @@
     "alert_popup_filter_enabled_desc": {
         "message": "%filter_name% a fost activat automatic"
     },
-    "filter_download_do_you_know": {
-        "message": "Știați?"
+    "filters_download_title": {
+        "message": "Baza de date a filtrelor se încarcă..."
+    },
+    "filters_download_loading": {
+        "message": "Vă rugăm să așteptați în timp ce baza de date se încarcă..."
     },
     "filtering_modal_element": {
         "message": "Element:"
@@ -427,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Introduceți fraza de căutare"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Salvați jurnalul"
-    },
-    "filtering_refresh_tab": {
-        "message": "Reîmprospătare pagină"
     },
     "filtering_clear_log_events": {
         "message": "Resetați raportul"
@@ -509,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Aplică această regulă la toate paginile web"
     },
-    "filtering_modal_match_case": {
-        "message": "Luați în considerare cazul"
-    },
     "filtering_modal_third_party": {
         "message": "Aplicați numai cererilor venite de la părți terțe"
     },
@@ -523,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Deschideți într-o filă nouă"
-    },
-    "filtering_log_filter_title": {
-        "message": "Filtru"
     },
     "filtering_log_filter_regular": {
         "message": "Obișnuit"
@@ -541,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Filtrul utilizatorului"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Parte primară"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Parte terță"
     },
     "options_settings": {
         "message": "Setări AdGuard"
@@ -620,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Cotați-ne!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Diverse"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Afișați informații despre versiunea completă AdGuard"
     },
     "options_show_app_updated_notification": {
         "message": "Notifică despre actualizări extensie"
-    },
-    "options_open_log": {
-        "message": "Jurnalul filtrărilor"
-    },
-    "options_reset_stats": {
-        "message": "Resetați statisticile"
     },
     "options_reset_stats_done": {
         "message": "Statisticile au fost resetate"
@@ -665,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Împiedică terțe-părți să știe ce site-uri web vizitați"
     },
-    "options_hide_search_queries_title": {
-        "message": "Ascundeți-vă interogările de căutare"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Ascunde interogările de site-uri vizitate dintr-un motor de căutare"
-    },
-    "options_send_not_track_title": {
-        "message": "Trimite antetul Do-Not-Track"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Parametrii de urmărire eliminați"
     },
@@ -682,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Cookie-uri terțe modificate"
-    },
-    "options_send_not_track_desc": {
-        "message": "Împiedică site-urile să vă urmărească"
     },
     "options_remove_client_data_title": {
         "message": "Eliminați antetul X-Client-Data"
@@ -700,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Eliminați parametrii de urmărire"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Listă de parametri de urmărire separați cu virgulă eliminați de AdGuard din adresele paginilor."
-    },
-    "options_cookies_title": {
-        "message": "Cookies"
     },
     "options_third_party_title": {
         "message": "Auto-distrugere cookie-uri terțe-părți"
@@ -773,7 +728,7 @@
     "options_delete_filter_confirm": {
         "message": "Sunteți sigur că vreți să ștergeți acest filtru?"
     },
-    "filtering_type_content_type": {
-        "message": "Tipul_conținutului"
+    "options_stealth_general_title": {
+        "message": "General"
     }
 }

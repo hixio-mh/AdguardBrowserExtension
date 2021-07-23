@@ -2,8 +2,8 @@
     "options_popup_title_placeholder": {
         "message": "필터 이름 입력"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "전체"
+    "options_filters_list_search_display_option_all_filters": {
+        "message": "모든 필터"
     },
     "options_filters_list_search_display_option_enabled": {
         "message": "활성화된 필터"
@@ -28,6 +28,9 @@
     },
     "options_filters_filter_version": {
         "message": "버전:"
+    },
+    "options_filters_filter_link": {
+        "message": "홈페이지로 이동"
     },
     "options_filters_filter_updated": {
         "message": "마지막 업데이트:"
@@ -104,6 +107,9 @@
     "options_allowlist_invert_desc": {
         "message": "허용 목록을 제외한 모든 곳의 광고 차단을 해제합니다."
     },
+    "options_allowlist_alert_invert": {
+        "message": "허용 목록이 반전되었습니다. 허용 목록에 추가된 웹 사이트에서만 광고가 차단됩니다. <a>비활성화<\/a>"
+    },
     "options_userfilter": {
         "message": "사용자 규칙"
     },
@@ -169,9 +175,6 @@
     },
     "options_filters_no_enabled": {
         "message": "활성화된 필터 없음"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "신뢰함"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "이 필터를 신뢰하셨습니다."
@@ -419,15 +422,6 @@
     "filters_download_loading": {
         "message": "필터 데이터베이스를 불러오는 동안 기다려주세요..."
     },
-    "filter_download_do_you_know": {
-        "message": "알고 계셨나요?"
-    },
-    "filters_download_sb_sites": {
-        "message": "AdGuard의 피싱, 멀웨어 데이터베이스에는<br\/>1백만 개 이상의 웹사이트가 들어있습니다."
-    },
-    "filters_download_rules": {
-        "message": "평균적으로 매주 1000개 이상의 광고 필터 규칙을 추가합니다."
-    },
     "filtering_modal_element": {
         "message": "요소"
     },
@@ -443,11 +437,14 @@
     "filtering_log_search_string": {
         "message": "검색어 입력"
     },
-    "filtering_log_preserve_log": {
-        "message": "로그 보존"
+    "filtering_log_preserve_log_off": {
+        "message": "로그 보존: 꺼짐"
     },
-    "filtering_refresh_tab": {
-        "message": "페이지 새로고침"
+    "filtering_log_preserve_log_on": {
+        "message": "로그 보존: 켜짐"
+    },
+    "filtering_refresh_tab_short": {
+        "message": "새로고침"
     },
     "filtering_clear_log_events": {
         "message": "로그 비우기"
@@ -463,6 +460,9 @@
     },
     "filtering_type_other": {
         "message": "기타"
+    },
+    "filtering_table_status": {
+        "message": "상태"
     },
     "filtering_table_type": {
         "message": "형식"
@@ -482,6 +482,9 @@
     "filtering_modal_info_title": {
         "message": "요청 세부 사항"
     },
+    "filtering_modal_preview_title": {
+        "message": "미리 보기"
+    },
     "filtering_modal_type": {
         "message": "형식:"
     },
@@ -500,17 +503,35 @@
     "filtering_modal_block": {
         "message": "차단"
     },
+    "filtering_modal_block_again": {
+        "message": "다시 차단"
+    },
     "filtering_modal_unblock": {
         "message": "차단 해제"
     },
     "filtering_modal_remove_user": {
         "message": "사용자 규칙에서 제거"
     },
+    "filtering_modal_preview_request_button": {
+        "message": "미리 보기"
+    },
     "filtering_modal_remove_allowlist": {
         "message": "허용 목록에서 제거"
     },
     "filtering_modal_add_title": {
         "message": "규칙 추가"
+    },
+    "filtering_modal_status_text_desc": {
+        "message": "상태:"
+    },
+    "filtering_modal_status_text_error": {
+        "message": "수신된 응답이 없습니다"
+    },
+    "filtering_modal_status_text_loading": {
+        "message": "로딩 중..."
+    },
+    "filtering_modal_filtering_status_text_desc": {
+        "message": "필터링 상태:"
     },
     "filtering_modal_rule_text_desc": {
         "message": "규칙 텍스트:"
@@ -524,9 +545,6 @@
     "filtering_modal_apply_domains": {
         "message": "모든 웹사이트에 이 규칙 적용"
     },
-    "filtering_modal_match_case": {
-        "message": "경우 고려"
-    },
     "filtering_modal_third_party": {
         "message": "제3자 요청에만 적용"
     },
@@ -539,8 +557,20 @@
     "filtering_modal_open_in_new_tab": {
         "message": "새 탭에서 링크 열기"
     },
-    "filtering_log_filter_title": {
-        "message": "필터"
+    "filtering_modal_show_full_url": {
+        "message": "전체 URL 표시"
+    },
+    "filtering_modal_hide_full_url": {
+        "message": "전체 URL 숨기기"
+    },
+    "filtering_modal_copy_to_clipboard": {
+        "message": "클립보드에 복사"
+    },
+    "filtering_modal_copied": {
+        "message": "복사됨"
+    },
+    "filtering_log_filter_processed": {
+        "message": "처리됨"
     },
     "filtering_log_filter_regular": {
         "message": "일반"
@@ -557,12 +587,6 @@
     "filtering_log_filter_user_rule": {
         "message": "사용자 필터"
     },
-    "filtering_log_filter_first_party": {
-        "message": "자체 제공"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "제3자 제공"
-    },
     "options_settings": {
         "message": "AdGuard 설정"
     },
@@ -572,11 +596,17 @@
     "options_allow_acceptable_ads": {
         "message": "검색 엔진의 광고와 웹사이트의 자체 광고 허용"
     },
+    "options_allow_acceptable_ads_desc": {
+        "message": "검색 광고는 Google, Bing, DuckDuckGo 등과 같은 검색 엔진을 사용할 때 검색어의 결과 중 표시되는 광고입니다.<a><\/a>"
+    },
     "options_show_blocked_ads_count_title": {
         "message": "차단된 광고의 수를 AdGuard 확장 프로그램 아이콘에 표시"
     },
     "options_enable_autodetect_filter": {
         "message": "가장 적당한 필터들을 자동으로 활성화"
+    },
+    "options_enable_autodetect_filter_desc": {
+        "message": "사이트 언어에 따라 언어별 필터가 켜집니다"
     },
     "options_select_theme": {
         "message": "테마"
@@ -602,8 +632,17 @@
     "options_update_antibanner_filters": {
         "message": "필터 업데이트 확인"
     },
+    "options_check_update": {
+        "message": "업데이트 확인"
+    },
+    "options_check_update_progress": {
+        "message": "확인 중..."
+    },
     "options_set_update_interval": {
         "message": "필터 업데이트 주기"
+    },
+    "options_set_update_interval_desc": {
+        "message": "효과적인 차단을 위해 필터를 주기적으로 업데이트해야 합니다"
     },
     "options_userfilter_export": {
         "message": "내보내기"
@@ -617,11 +656,20 @@
     "options_userfilter_description_key": {
         "message": "자신만의 규칙을 추가할 수 있습니다. 이 설정은 HTML\/CSS에 익숙한 고급 사용자에게 권장합니다. <a>필터 규칙 튜토리얼<\/a>을 읽어보고 사용자 지정 필터 규칙을 어떻게 만드는지 알아보세요."
     },
+    "options_userfilter_line_break_off": {
+        "message": "개행: 꺼짐"
+    },
+    "options_userfilter_line_break_on": {
+        "message": "개행: 켜짐"
+    },
     "options_open_changelog": {
         "message": "변경사항"
     },
     "options_safebrowsing_enabled": {
         "message": "피싱, 멀웨어 보호"
+    },
+    "options_safebrowsing_enabled_desc": {
+        "message": "악성 및 피싱 웹 사이트로부터 사용자를 보호하는 특수 필터입니다.<a><\/a>"
     },
     "options_site": {
         "message": "공식 웹사이트"
@@ -636,7 +684,7 @@
         "message": "평가해주세요!"
     },
     "options_miscellaneous_settings": {
-        "message": "기타"
+        "message": "추가 설정"
     },
     "options_show_adguard_full_version_title": {
         "message": "AdGuard 전체 버전 정보 보기"
@@ -645,13 +693,22 @@
         "message": "필터 업데이트 알림"
     },
     "options_open_log": {
-        "message": "필터링 로그"
+        "message": "필터링 로그 열기"
     },
     "options_reset_stats": {
-        "message": "통계 초기화"
+        "message": "통계 비우기"
     },
     "options_reset_stats_done": {
         "message": "통계가 초기화 되었습니다."
+    },
+    "options_reset_settings": {
+        "message": "설정 초기화"
+    },
+    "options_reset_settings_done": {
+        "message": "설정이 초기화되었습니다"
+    },
+    "options_reset_settings_error": {
+        "message": "설정을 초기화하는 동안 오류가 발생했습니다"
     },
     "options_collect_hit_stats_title": {
         "message": "사용중인 광고 필터 통계 전송"
@@ -684,10 +741,13 @@
         "message": "검색어 숨기기"
     },
     "options_hide_search_queries_desc": {
-        "message": "검색 엔진에서 방문한 웹사이트 기록을 숨깁니다"
+        "message": "검색 엔진에서 방문한 웹 사이트의 검색어 숨깁니다"
     },
     "options_send_not_track_title": {
-        "message": "추적 금지 헤더 전송"
+        "message": "웹 사이트에 추적 금지 신호 보내기"
+    },
+    "options_send_not_track_desc": {
+        "message": "방문하는 웹 사이트에 <gpc>Global Privacy Control<\/gpc> 및 <dnt>추적 금지<\/dnt> 신호를 보냅니다"
     },
     "options_stripped_tracking_parameters": {
         "message": "추적 매개변수 제거"
@@ -697,9 +757,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "제 3자 쿠키 수정됨"
-    },
-    "options_send_not_track_desc": {
-        "message": "웹사이트의 추적을 차단합니다"
     },
     "options_remove_client_data_title": {
         "message": "X-Client-Data 헤더 제거"
@@ -716,11 +773,14 @@
     "options_strip_tracking_params_title": {
         "message": "추적 매개 변수 제거"
     },
-    "options_strip_tracking_params_desc": {
-        "message": ",(콤마)로 구분된 추적 매개변수는 AdGuard가 페이지 주소에서 차단합니다."
+    "options_strip_tracking_params_description": {
+        "message": "활성화되면 AdGuard URL 추적 필터가 페이지 URL에서 추적 매개 변수를 제거하는 데 사용됩니다."
     },
-    "options_cookies_title": {
-        "message": "쿠기"
+    "options_block_known_trackers_title": {
+        "message": "알려진 추적기 차단"
+    },
+    "options_block_known_trackers_description": {
+        "message": "활성화하면 AdGuard 추적 보호 필터가 알려진 추적기들을 차단합니다."
     },
     "options_third_party_title": {
         "message": "서드파티 쿠키 자동 파괴"
@@ -788,7 +848,100 @@
     "options_delete_filter_confirm": {
         "message": "정말 이 필터를 삭제할까요?"
     },
-    "filtering_type_content_type": {
-        "message": "Content_type"
+    "options_nav_better_than_extension": {
+        "message": "AdGuard 정식 프로그램이 확장 프로그램보다 나은 이유는 무엇인가요?"
+    },
+    "options_nav_compare": {
+        "message": "차이점 비교해보기"
+    },
+    "options_nav_hide": {
+        "message": "숨기기"
+    },
+    "options_filters_search": {
+        "message": "검색"
+    },
+    "options_about_title": {
+        "message": "AdGuard 브라우저 확장 프로그램"
+    },
+    "group_description_adblocking": {
+        "message": "배너, 팝업, 동영상 광고 등을 차단하려면 여기에서 광고 차단을 설정하세요"
+    },
+    "group_description_stealth": {
+        "message": "알려진 모든 추적 방법을 차단하여 온라인 추적기로부터 개인 정보를 보호합니다"
+    },
+    "group_description_social": {
+        "message": "'좋아요'\/'공유' 버튼 및 기타 SNS 위젯을 숨깁니다"
+    },
+    "group_description_annoyances": {
+        "message": "팝업 창 및 쿠키와 같은 기타 알림을 제거합니다"
+    },
+    "group_description_security": {
+        "message": "맬웨어, 피싱 및 기타 온라인 위협으로부터 자신을 보호하세요"
+    },
+    "group_description_miscellaneous": {
+        "message": "더 많은 AdGuard 설정을 통해 웹 서핑을 더 잘 제어하세요"
+    },
+    "group_description_custom": {
+        "message": "자신만의 필터를 원하는 대로 만들어 세세하게 웹을 필터링하세요"
+    },
+    "group_description_lang": {
+        "message": "한계를 두지 마세요 — 어떤 언어로 된 웹사이트에서든 광고 차단"
+    },
+    "fullscreen_user_rules_title": {
+        "message": "사용자 규칙"
+    },
+    "options_user_rules_editor_stub_title": {
+        "message": "편집기가 이미 열려 있습니다"
+    },
+    "options_user_rules_editor_stub_go_to_editor_button": {
+        "message": "편집기로 이동"
+    },
+    "options_editor_open_fullscreen_button_tooltip": {
+        "message": "편집기 전체 화면으로 열기"
+    },
+    "options_editor_close_fullscreen_button_tooltip": {
+        "message": "편집기 전체 화면 해제"
+    },
+    "options_clear_stats_confirm_modal_title": {
+        "message": "통계를 삭제하시겠습니까?"
+    },
+    "options_clear_stats_confirm_modal_clear_button": {
+        "message": "비우기"
+    },
+    "options_reset_settings_confirm_modal_title": {
+        "message": "설정을 초기화하시겠습니까?"
+    },
+    "options_reset_settings_confirm_modal_clear_button": {
+        "message": "초기화"
+    },
+    "filtering_log_details_modal_beautify_button": {
+        "message": "가독성 향상"
+    },
+    "filtering_log_details_modal_back_button": {
+        "message": "요청으로 돌아가기"
+    },
+    "filtering_log_details_modal_try_again": {
+        "message": "다시 시도"
+    },
+    "filtering_log_tooltip_first_party": {
+        "message": "퍼스트 파티 요청"
+    },
+    "filtering_log_tooltip_third_party": {
+        "message": "제 3자 요청"
+    },
+    "filtering_log_tooltip_multiple_filters_mac": {
+        "message": "여러 필터를 선택하려면 Cmd를 길게 누릅니다"
+    },
+    "filtering_log_tooltip_multiple_filters_win": {
+        "message": "여러 필터를 선택하려면 Ctrl를 길게 누릅니다"
+    },
+    "options_stealth_general_title": {
+        "message": "일반"
+    },
+    "options_stealth_cookies_title": {
+        "message": "쿠기"
+    },
+    "options_stealth_miscellaneous_title": {
+        "message": "기타"
     }
 }

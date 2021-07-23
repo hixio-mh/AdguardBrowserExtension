@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Sisesta filtri nimi"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Kõik"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Sisselülitatud"
     },
@@ -139,9 +136,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Filtreid pole sisse lülitatud"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "usaldatud"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Otsustasid, et usaldad seda filtrit"
@@ -353,9 +347,6 @@
     "alert_popup_filter_enabled_title": {
         "message": "Toimus automaatne filtri aktiveerimine"
     },
-    "filter_download_do_you_know": {
-        "message": "Kas teadsid?"
-    },
     "filtering_modal_element": {
         "message": "Element:"
     },
@@ -367,12 +358,6 @@
     },
     "filtering_log_search_string": {
         "message": "Sisesta märksõna"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Jäta logi alles"
-    },
-    "filtering_refresh_tab": {
-        "message": "Värskenda lehte"
     },
     "filtering_type_all": {
         "message": "Kõik"
@@ -421,9 +406,6 @@
     },
     "filtering_modal_apply_domains": {
         "message": "Rakenda seda kõikidel veebilehtedel"
-    },
-    "filtering_modal_match_case": {
-        "message": "Luba tõstutundlik filtreerimine"
     },
     "filtering_modal_third_party": {
         "message": "Rakenda ainult kolmanda osapoole päringutel"
@@ -482,17 +464,8 @@
     "options_discuss": {
         "message": "Avalda arvamust"
     },
-    "options_miscellaneous_settings": {
-        "message": "Mitmesugust"
-    },
     "options_show_app_updated_notification": {
         "message": "Teavita mind AdGuardi brauserilisa uuendustest"
-    },
-    "options_open_log": {
-        "message": "Filtreerimise logi"
-    },
-    "options_reset_stats": {
-        "message": "Nulli statistika"
     },
     "options_reset_stats_done": {
         "message": "Statistika on nullitud"
@@ -518,15 +491,6 @@
     "options_hide_referrer_desc": {
         "message": "Takistab kolmandatel osapooltel teada saada, milliseid veebilehti külastad"
     },
-    "options_hide_search_queries_title": {
-        "message": "Peida tehtavad otsingupäringud"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Lehtede eest, mida otsingumootori kaudu külastad"
-    },
-    "options_send_not_track_title": {
-        "message": "Saada Do-Not-Track päis"
-    },
     "options_stripped_tracking_parameters": {
         "message": "Eemaldatakse jälitamise parameetrid"
     },
@@ -535,9 +499,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Kolmanda osapoole küpsis on muudetud"
-    },
-    "options_send_not_track_desc": {
-        "message": "Takista veebilehti end jälitamast"
     },
     "options_remove_client_data_title": {
         "message": "Eemalda X-Client-Data päis"
@@ -553,12 +514,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Eemalda jälitamise parameetrid"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Komaga eraldatud jälitamise parameetrid, mida AdGuard veebilehtede aadressidelt eemaldab."
-    },
-    "options_cookies_title": {
-        "message": "Küpsised"
     },
     "options_third_party_title": {
         "message": "Isehävinevad kolmandate osapoolte küpsised"

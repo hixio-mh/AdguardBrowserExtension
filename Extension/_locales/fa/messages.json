@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "نام فیلتر را وارد کنید"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "همه"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "فعال شده"
     },
@@ -166,9 +163,6 @@
     },
     "options_filters_no_enabled": {
         "message": "فیلتری فعال نشده است"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "اعتماد"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "شما اعتماد به این فیلتر را انتخاب کردید"
@@ -407,9 +401,6 @@
     "alert_popup_filter_enabled_desc": {
         "message": "%filter_name% به طور خودکار فعال شده است"
     },
-    "filter_download_do_you_know": {
-        "message": "آيا ميدانيد؟"
-    },
     "filtering_modal_element": {
         "message": "عنصر:"
     },
@@ -424,12 +415,6 @@
     },
     "filtering_log_search_string": {
         "message": "متن جستجو را وارد کنید"
-    },
-    "filtering_log_preserve_log": {
-        "message": "حفظ وقایع"
-    },
-    "filtering_refresh_tab": {
-        "message": "تازه سازی صفحه"
     },
     "filtering_clear_log_events": {
         "message": "پاکسازی گزارشات"
@@ -503,9 +488,6 @@
     "filtering_modal_apply_domains": {
         "message": "اِعمال دستور در همه وبسایت ها"
     },
-    "filtering_modal_match_case": {
-        "message": "در نظر گرفتن مورد"
-    },
     "filtering_modal_third_party": {
         "message": "فقط اِعمال به درخواست های ثالث"
     },
@@ -517,9 +499,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "بازکردن در تب جدید"
-    },
-    "filtering_log_filter_title": {
-        "message": "فیلتر"
     },
     "filtering_log_filter_regular": {
         "message": "عادی"
@@ -535,12 +514,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "فیلترهای دستی"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "شخص اول"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "شخص ثالث"
     },
     "options_settings": {
         "message": "تنظیمات AdGuard"
@@ -602,20 +575,11 @@
     "options_footer_like_us_cta": {
         "message": "امتیاز بدهید!"
     },
-    "options_miscellaneous_settings": {
-        "message": "متفرقه"
-    },
     "options_show_adguard_full_version_title": {
         "message": "نمایش اطلاعات در نسخه کامل AdGuard"
     },
     "options_show_app_updated_notification": {
         "message": "درباره بروز رسانی افزونه اطلاع رسانی کن"
-    },
-    "options_open_log": {
-        "message": "وقایع فیلترینگ"
-    },
-    "options_reset_stats": {
-        "message": "ریست آمار"
     },
     "options_reset_stats_done": {
         "message": "آمار ریست شود"
@@ -647,15 +611,6 @@
     "options_hide_referrer_desc": {
         "message": "پیشگیری از شناخته شدن توسط فرد ثالث وقتی از وبسایتی بازدید می کنید"
     },
-    "options_hide_search_queries_title": {
-        "message": "مخفی کردن جستار جستجوی شما"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "مخفی کردن جستارها برای وبسایت های بازدید شده از موتور جستجو"
-    },
-    "options_send_not_track_title": {
-        "message": "ارسال سرساز من-را-ردیابی نکن"
-    },
     "options_stripped_tracking_parameters": {
         "message": "پارامترهای ردیابی حذف شده"
     },
@@ -664,9 +619,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "کوکی ثالث ویرایش شده"
-    },
-    "options_send_not_track_desc": {
-        "message": "پیشگیری وبسایت از ردگیری شما"
     },
     "options_remove_client_data_title": {
         "message": "حذف سرساز X-Client-Data"
@@ -682,12 +634,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "حذف پارامترهای رَدیابی"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "لیست جداشده با ویرگول پارامترهای ردیابی که AdGuard از آدرس صفحات حذف می کند."
-    },
-    "options_cookies_title": {
-        "message": "کوکی ها"
     },
     "options_third_party_title": {
         "message": "خود-تخریبی کوکی های ثالث"
@@ -754,8 +700,5 @@
     },
     "options_delete_filter_confirm": {
         "message": "آیا واقعا میخواهید این فیلتر را حذف کنید؟"
-    },
-    "filtering_type_content_type": {
-        "message": "Content_type"
     }
 }

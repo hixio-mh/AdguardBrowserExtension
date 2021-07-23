@@ -2,9 +2,6 @@
     "options_popup_title_placeholder": {
         "message": "Unesite naziv filtra"
     },
-    "options_filters_list_search_display_option_all": {
-        "message": "Sve"
-    },
     "options_filters_list_search_display_option_enabled": {
         "message": "Omogućeno"
     },
@@ -149,6 +146,9 @@
     "options_select_update_period_disabled": {
         "message": "Onemogućeno"
     },
+    "options_filters": {
+        "message": "Filtri"
+    },
     "options_antibanner_rules_count": {
         "message": "Filtriraj broj pravila: %rules_count%"
     },
@@ -166,9 +166,6 @@
     },
     "options_filters_no_enabled": {
         "message": "Nema omogućenih filtara"
-    },
-    "options_filters_filter_trusted_tag": {
-        "message": "pouzdan"
     },
     "options_filters_filter_trusted_tag_desc": {
         "message": "Izabrali ste vjerovati ovom filtru"
@@ -410,8 +407,11 @@
     "alert_popup_filter_enabled_desc": {
         "message": "%filter_name% je automatski aktiviran"
     },
-    "filter_download_do_you_know": {
-        "message": "Jeste li znali?"
+    "filters_download_title": {
+        "message": "Baza filtara seučitava..."
+    },
+    "filters_download_loading": {
+        "message": "Molimo pričekajte dok se bazafiltara ne učita..."
     },
     "filtering_modal_element": {
         "message": "Element:"
@@ -427,12 +427,6 @@
     },
     "filtering_log_search_string": {
         "message": "Unesite pojam za pretraživanje"
-    },
-    "filtering_log_preserve_log": {
-        "message": "Sačuvaj zapise"
-    },
-    "filtering_refresh_tab": {
-        "message": "Osvježi stranicu"
     },
     "filtering_clear_log_events": {
         "message": "Očisti zapise"
@@ -509,9 +503,6 @@
     "filtering_modal_apply_domains": {
         "message": "Primjeni ovo pravilo na svim stranicama"
     },
-    "filtering_modal_match_case": {
-        "message": "Omogući osjetljivost na velika i mala slova"
-    },
     "filtering_modal_third_party": {
         "message": "Primjeni samo na zahtjeve treće strane"
     },
@@ -523,9 +514,6 @@
     },
     "filtering_modal_open_in_new_tab": {
         "message": "Otvori u novoj kartici"
-    },
-    "filtering_log_filter_title": {
-        "message": "Filtar"
     },
     "filtering_log_filter_regular": {
         "message": "Zadano"
@@ -541,12 +529,6 @@
     },
     "filtering_log_filter_user_rule": {
         "message": "Korisnički filtar"
-    },
-    "filtering_log_filter_first_party": {
-        "message": "Prva strana"
-    },
-    "filtering_log_filter_third_party": {
-        "message": "Treća strana"
     },
     "options_settings": {
         "message": "AdGuard Postavke"
@@ -620,20 +602,11 @@
     "options_footer_like_us_cta": {
         "message": "Ocijenite ga!"
     },
-    "options_miscellaneous_settings": {
-        "message": "Razno"
-    },
     "options_show_adguard_full_version_title": {
         "message": "Prikaži informacije o punoj verziji AdGuarda"
     },
     "options_show_app_updated_notification": {
         "message": "Obavijesti o ažuriranjima proširenja"
-    },
-    "options_open_log": {
-        "message": "Zapisnik filtriranja"
-    },
-    "options_reset_stats": {
-        "message": "Poništi statistiku"
     },
     "options_reset_stats_done": {
         "message": "Statistika je poništena"
@@ -665,15 +638,6 @@
     "options_hide_referrer_desc": {
         "message": "Spriječite treće strane da znaju koju web stranice posjećujete"
     },
-    "options_hide_search_queries_title": {
-        "message": "Sakrijte vaše upite pretraživanja"
-    },
-    "options_hide_search_queries_desc": {
-        "message": "Sakrij upite o web stranicama koje su posjećene putem pretraživača"
-    },
-    "options_send_not_track_title": {
-        "message": "Pošalji zaglavlje \"Ne prati me\""
-    },
     "options_stripped_tracking_parameters": {
         "message": "Parametri praćenja su uklonjeni"
     },
@@ -682,9 +646,6 @@
     },
     "options_modified_third_party_cookie": {
         "message": "Promijenjen je kolačić treće strane"
-    },
-    "options_send_not_track_desc": {
-        "message": "Spriječite da vas web stranice prate"
     },
     "options_remove_client_data_title": {
         "message": "Ukloni X-Client-Data zaglavlje"
@@ -700,12 +661,6 @@
     },
     "options_strip_tracking_params_title": {
         "message": "Ukloni parametre praćenja"
-    },
-    "options_strip_tracking_params_desc": {
-        "message": "Popis parametara za praćenje, odvojen zarezima, koje će AdGuard ukloniti iz URL adresa web stranica."
-    },
-    "options_cookies_title": {
-        "message": "Kolačići"
     },
     "options_third_party_title": {
         "message": "Samouništavajući kolačići treće strane"
@@ -772,8 +727,5 @@
     },
     "options_delete_filter_confirm": {
         "message": "Jeste li sigurni da želite ukloniti ovaj filtar?"
-    },
-    "filtering_type_content_type": {
-        "message": "Content_type"
     }
 }
