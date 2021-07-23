@@ -163,6 +163,9 @@
         "stealth-block-first-party-cookies": {
           "type": "boolean"
         },
+        "block-known-trackers": {
+          "type": "boolean"
+        },
         "strip-tracking-parameters": {
           "type": "boolean"
         }

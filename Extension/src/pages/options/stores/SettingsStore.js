@@ -41,6 +41,12 @@ const savingAllowlistService = createSavingService({
 });
 
 class SettingsStore {
+    KEYS = {
+        ALLOW_ACCEPTABLE_ADS: 'allowAcceptableAds',
+        BLOCK_KNOWN_TRACKERS: 'blockKnownTrackers',
+        STRIP_TRACKING_PARAMETERS: 'stripTrackingParameters',
+    };
+
     @observable settings = null;
 
     @observable optionsReadyToRender = false;
@@ -56,6 +62,8 @@ class SettingsStore {
     @observable rulesCount = 0;
 
     @observable allowAcceptableAds = null;
+
+    @observable blockKnownTrackers = null;
 
     @observable stripTrackingParameters = null;
 
@@ -118,6 +126,7 @@ class SettingsStore {
             this.version = data.appVersion;
             this.constants = data.constants;
             this.setAllowAcceptableAds(data.filtersMetadata.filters);
+            this.setBlockKnownTrackers(data.filtersMetadata.filters);
             this.setStripTrackingParameters(data.filtersMetadata.filters);
             this.isChrome = data.environmentOptions.isChrome;
             this.optionsReadyToRender = true;
@@ -152,84 +161,102 @@ class SettingsStore {
         messenger.changeUserSetting(settingId, value);
     }
 
-    @action
-    setAllowAcceptableAds(filters) {
-        const { SEARCH_AND_SELF_PROMO_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const allowAcceptableAdsFilter = filters
-            .find((f) => f.filterId === SEARCH_AND_SELF_PROMO_FILTER_ID);
-        this.allowAcceptableAds = !!(allowAcceptableAdsFilter.enabled);
+    async setFilterRelatedSettingState(filterId, optionKey, enabled) {
+        const prevValue = this[optionKey];
+        this[optionKey] = enabled;
+        try {
+            const relatedFilter = this.filters
+                .find((f) => f.filterId === filterId);
+
+            if (enabled) {
+                await messenger.enableFilter(filterId);
+                await this.updateGroupSetting(relatedFilter.groupId, enabled);
+            } else {
+                await messenger.disableFilter(filterId);
+            }
+
+            relatedFilter.enabled = enabled;
+            this.refreshFilter(relatedFilter);
+        } catch (e) {
+            runInAction(() => {
+                this[optionKey] = prevValue;
+            });
+        }
     }
 
     @action
     async setAllowAcceptableAdsState(enabled) {
         const { SEARCH_AND_SELF_PROMO_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const prevValue = this.allowAcceptableAds;
-        this.allowAcceptableAds = enabled;
-        try {
-            const allowAcceptableAdsFilter = this.filters
-                .find((f) => f.filterId === SEARCH_AND_SELF_PROMO_FILTER_ID);
-
-            if (enabled) {
-                await messenger.enableFilter(SEARCH_AND_SELF_PROMO_FILTER_ID);
-                await this.updateGroupSetting(allowAcceptableAdsFilter.groupId, enabled);
-            } else {
-                await messenger.disableFilter(SEARCH_AND_SELF_PROMO_FILTER_ID);
-            }
-
-            allowAcceptableAdsFilter.enabled = enabled;
-            this.refreshFilter(allowAcceptableAdsFilter);
-        } catch (e) {
-            runInAction(() => {
-                this.allowAcceptableAds = prevValue;
-            });
-        }
-    }
-
-    isAllowAcceptableAdsFilterEnabled() {
-        const { SEARCH_AND_SELF_PROMO_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const allowAcceptableAdsFilter = this.filters
-            .find((f) => f.filterId === SEARCH_AND_SELF_PROMO_FILTER_ID);
-        return allowAcceptableAdsFilter.enabled;
+        await this.setFilterRelatedSettingState(
+            SEARCH_AND_SELF_PROMO_FILTER_ID,
+            this.KEYS.ALLOW_ACCEPTABLE_ADS,
+            enabled,
+        );
     }
 
     @action
-    setStripTrackingParameters(filters) {
-        const { URL_TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const filterObject = filters
-            .find((f) => f.filterId === URL_TRACKING_FILTER_ID);
-        this.stripTrackingParameters = !!(filterObject.enabled);
+    async setBlockKnownTrackersState(enabled) {
+        const { TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        await this.setFilterRelatedSettingState(
+            TRACKING_FILTER_ID,
+            this.KEYS.BLOCK_KNOWN_TRACKERS,
+            enabled,
+        );
     }
 
     @action
     async setStripTrackingParametersState(enabled) {
         const { URL_TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const prevValue = this.stripTrackingParameters;
-        this.stripTrackingParameters = enabled;
-        try {
-            const stripTrackingParametersFilter = this.filters
-                .find((f) => f.filterId === URL_TRACKING_FILTER_ID);
+        await this.setFilterRelatedSettingState(
+            URL_TRACKING_FILTER_ID,
+            this.KEYS.STRIP_TRACKING_PARAMETERS,
+            enabled,
+        );
+    }
 
-            if (enabled) {
-                await messenger.enableFilter(URL_TRACKING_FILTER_ID);
-                await this.updateGroupSetting(stripTrackingParametersFilter.groupId, enabled);
-            } else {
-                await messenger.disableFilter(URL_TRACKING_FILTER_ID);
-            }
+    setSetting(filtersId, settingKey, filters) {
+        const relatedFilter = filters
+            .find((f) => f.filterId === filtersId);
+        this[settingKey] = !!(relatedFilter.enabled);
+    }
 
-            stripTrackingParametersFilter.enabled = enabled;
-            this.refreshFilter(stripTrackingParametersFilter);
-        } catch (e) {
-            runInAction(() => {
-                this.stripTrackingParameters = prevValue;
-            });
-        }
+    @action
+    setAllowAcceptableAds(filters) {
+        const { SEARCH_AND_SELF_PROMO_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        this.setSetting(SEARCH_AND_SELF_PROMO_FILTER_ID, this.KEYS.ALLOW_ACCEPTABLE_ADS, filters);
+    }
+
+    @action
+    setBlockKnownTrackers(filters) {
+        const { TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        this.setSetting(TRACKING_FILTER_ID, this.KEYS.BLOCK_KNOWN_TRACKERS, filters);
+    }
+
+    @action
+    setStripTrackingParameters(filters) {
+        const { URL_TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        this.setSetting(URL_TRACKING_FILTER_ID, this.KEYS.STRIP_TRACKING_PARAMETERS, filters);
+    }
+
+    isFilterEnabled(filterId) {
+        const filter = this.filters
+            .find((f) => f.filterId === filterId);
+        return filter.enabled;
+    }
+
+    isAllowAcceptableAdsFilterEnabled() {
+        const { SEARCH_AND_SELF_PROMO_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        this.isFilterEnabled(SEARCH_AND_SELF_PROMO_FILTER_ID);
+    }
+
+    isBlockKnownTrackersFilterEnabled() {
+        const { TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
+        this.isFilterEnabled(TRACKING_FILTER_ID);
     }
 
     isStripTrackingParametersFilterEnabled() {
         const { URL_TRACKING_FILTER_ID } = this.constants.AntiBannerFiltersId;
-        const filterObject = this.filters
-            .find((f) => f.filterId === URL_TRACKING_FILTER_ID);
-        return filterObject.enabled;
+        this.isFilterEnabled(URL_TRACKING_FILTER_ID);
     }
 
     @computed
@@ -245,9 +272,13 @@ class SettingsStore {
             if (groupId === ANTIBANNER_GROUPS_ID.OTHER_FILTERS_GROUP_ID
                 && this.isAllowAcceptableAdsFilterEnabled()) {
                 this.allowAcceptableAds = enabled;
-            } else if (groupId === ANTIBANNER_GROUPS_ID.PRIVACY_FILTERS_GROUP_ID
-                && this.isStripTrackingParametersFilterEnabled()) {
-                this.stripTrackingParameters = enabled;
+            } else if (groupId === ANTIBANNER_GROUPS_ID.PRIVACY_FILTERS_GROUP_ID) {
+                if (this.isBlockKnownTrackersFilterEnabled()) {
+                    this.blockKnownTrackers = enabled;
+                }
+                if (this.isStripTrackingParametersFilterEnabled()) {
+                    this.stripTrackingParameters = enabled;
+                }
             }
             this.categories.forEach((group) => {
                 if (group.groupId === groupId) {
@@ -311,6 +342,8 @@ class SettingsStore {
             // update allow acceptable ads setting
             if (filterId === this.constants.AntiBannerFiltersId.SEARCH_AND_SELF_PROMO_FILTER_ID) {
                 this.allowAcceptableAds = enabled;
+            } else if (filterId === this.constants.AntiBannerFiltersId.TRACKING_FILTER_ID) {
+                this.blockKnownTrackers = enabled;
             } else if (filterId === this.constants.AntiBannerFiltersId.URL_TRACKING_FILTER_ID) {
                 this.stripTrackingParameters = enabled;
             }

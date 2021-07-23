@@ -115,6 +115,7 @@ export const settingsProvider = (function () {
      */
     const loadStealthModeSection = () => {
         const enabledFilterIds = collectEnabledFilterIds();
+        const blockKnownTrackers = enabledFilterIds.indexOf(utils.filters.ids.TRACKING_FILTER_ID) >= 0;
         const stripTrackingParameters = enabledFilterIds.indexOf(utils.filters.ids.URL_TRACKING_FILTER_ID) >= 0;
 
         const section = {
@@ -128,6 +129,7 @@ export const settingsProvider = (function () {
                 'stealth-block-third-party-cookies-time': settings.getSelfDestructThirdPartyCookiesTime(),
                 'stealth-block-first-party-cookies': settings.getSelfDestructFirstPartyCookies(),
                 'stealth-block-first-party-cookies-time': settings.getSelfDestructFirstPartyCookiesTime(),
+                'block-known-trackers': blockKnownTrackers,
                 'strip-tracking-parameters': stripTrackingParameters,
             },
         };
