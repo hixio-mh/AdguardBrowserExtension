@@ -246,14 +246,16 @@ export const browserUtils = (function () {
 
         /**
          * Retrieve languages from navigator
-         * @param limit Limit of preferred languages
+         * @param {number} [limit] Limit of preferred languages
          * @returns {Array}
          */
         getNavigatorLanguages(limit) {
             let languages = [];
             // https://developer.mozilla.org/ru/docs/Web/API/NavigatorLanguage/languages
             if (collections.isArray(navigator.languages)) {
-                languages = navigator.languages.slice(0, limit);
+                // get all languages if 'limit' is not specified
+                const langLimit = limit || navigator.languages.length;
+                languages = navigator.languages.slice(0, langLimit);
             } else if (navigator.language) {
                 languages.push(navigator.language); // .language is first in .languages
             }

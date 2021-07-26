@@ -453,8 +453,8 @@ export const subscriptions = (() => {
         filterIds = filterIds.concat(localeFilterIds);
 
         // Get language-specific filters by navigator languages
-        // Get the 2 most commonly used languages
-        const languages = browserUtils.getNavigatorLanguages(2);
+        // Get all used languages
+        const languages = browserUtils.getNavigatorLanguages();
         for (let i = 0; i < languages.length; i += 1) {
             localeFilterIds = getFilterIdsForLanguage(languages[i]);
             filterIds = filterIds.concat(localeFilterIds);
