@@ -120,20 +120,23 @@
     }
 
     &--in-exception {
-        & .switcher__btn {
-            right: 22px;
+        & .switcher {
+            cursor: default;
 
-            &:before {
-                display: none;
+            &:hover {
+                & .switcher__btn {
+                    transform: none;
+                }
             }
 
-            & .switcher__icon--checkmark {
-                display: block;
-            }
-        }
+            &__btn {
+                cursor: default;
+                right: 22px;
 
-        & .switcher__icon--checkmark {
-            display: none;
+                &:before {
+                    display: none;
+                }
+            }
         }
     }
 }
