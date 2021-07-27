@@ -231,7 +231,7 @@ export const RequestFilter = (() => {
             });
 
             if (debug) {
-                scriptRules.forEach((scriptRule) => {
+                selectedScriptRules.forEach((scriptRule) => {
                     if (!scriptRule.isGeneric()) {
                         filteringLog.addScriptInjectionEvent({
                             tab,
