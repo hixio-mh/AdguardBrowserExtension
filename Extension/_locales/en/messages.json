@@ -566,9 +566,6 @@
     "filtering_modal_copied": {
         "message": "Copied"
     },
-    "filtering_log_filter_processed": {
-        "message": "Processed"
-    },
     "filtering_log_filter_regular": {
         "message": "Regular"
     },
@@ -583,6 +580,18 @@
     },
     "filtering_log_filter_user_rules": {
         "message": "User rules"
+    },
+    "filtering_log_status_processed": {
+        "message": "Processed"
+    },
+    "filtering_log_status_allowed": {
+        "message": "Allowed"
+    },
+    "filtering_log_status_blocked": {
+        "message": "Blocked"
+    },
+    "filtering_log_status_modified": {
+        "message": "Modified"
     },
     "options_settings": {
         "message": "AdGuard Settings"
@@ -932,9 +941,6 @@
     "filtering_log_third_party_tag_tooltip": {
         "message": "Only third-party requests"
     },
-    "filtering_log_third_party_badge_tooltip": {
-        "message": "Third-party request"
-    },
     "filtering_log_regular_tag_tooltip": {
         "message": "Only requests processed without any filtering"
     },
@@ -970,6 +976,15 @@
     },
     "filtering_log_other_tag_tooltip": {
         "message": "Other"
+    },
+    "filtering_log_badge_tooltip_third_party": {
+        "message": "Third-party request"
+    },
+    "filtering_log_badge_tooltip_http_req_method": {
+        "message": "HTTP request method"
+    },
+    "filtering_log_badge_tooltip_http_status_code": {
+        "message": "HTTP status code"
     },
     "options_stealth_general_title": {
         "message": "General"
