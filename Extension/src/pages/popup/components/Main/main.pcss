@@ -137,6 +137,14 @@
                     display: none;
                 }
             }
+
+            & .switcher__icon--checkmark {
+                display: none;
+            }
+
+            & .switcher__icon--exclamation {
+                display: block;
+            }
         }
     }
 }
@@ -208,8 +216,14 @@
             display: none;
         }
 
-        &--checkmark {
-            display: block;
+        &--circle {
+            display: none;
+        }
+
+        &--exclamation {
+            display: none;
+            left: calc(50% - 2px);
+            top: 14px;
         }
 
         &--cross {
