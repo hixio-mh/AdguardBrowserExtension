@@ -581,8 +581,8 @@
     "filtering_log_filter_modified": {
         "message": "Modified"
     },
-    "filtering_log_filter_user_rule": {
-        "message": "User filter"
+    "filtering_log_filter_user_rules": {
+        "message": "User rules"
     },
     "options_settings": {
         "message": "AdGuard Settings"
