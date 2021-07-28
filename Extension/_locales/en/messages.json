@@ -938,12 +938,6 @@
     "filtering_log_tooltip_third_party": {
         "message": "Third-party requests"
     },
-    "filtering_log_tooltip_multiple_filters_mac": {
-        "message": "Hold Cmd to select multiple filters"
-    },
-    "filtering_log_tooltip_multiple_filters_win": {
-        "message": "Hold Ctrl to select multiple filters"
-    },
     "options_stealth_general_title": {
         "message": "General"
     },
