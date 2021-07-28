@@ -3,7 +3,7 @@ eslint-disable jsx-a11y/anchor-is-valid,
 jsx-a11y/click-events-have-key-events,
 jsx-a11y/no-static-element-interactions
 */
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { observer } from 'mobx-react';
 import cn from 'classnames';
 
@@ -13,6 +13,7 @@ import { reactTranslator } from '../../../../common/translators/reactTranslator'
 import { Icon } from '../../../common/components/ui/Icon';
 import { HighlightSearch } from './Search/HighlightSearch';
 import { FilterTags } from './FilterTags';
+import { ConfirmModal } from '../../../common/components/ConfirmModal';
 
 import './filter.pcss';
 
@@ -50,6 +51,8 @@ const removePrefix = (extendedFilterId) => {
 const Filter = observer(({ filter }) => {
     const { settingsStore } = useContext(rootStore);
 
+    const [isOpenRemoveFilterModal, setIsOpenRemoveFilterModal] = useState(false);
+
     const {
         name,
         filterId,
@@ -79,23 +82,37 @@ const Filter = observer(({ filter }) => {
         await settingsStore.updateFilterSetting(filterIdWithoutPrefix, data);
     };
 
-    const removeCustomFilter = async (e) => {
+    const handleRemoveFilterClick = async (e) => {
         e.preventDefault();
-        const result = window.confirm(reactTranslator.getMessage('options_delete_filter_confirm'));
-        if (result) {
-            await settingsStore.removeCustomFilter(filterId);
-        }
+        setIsOpenRemoveFilterModal(true);
+    };
+
+    const handleRemoveFilterConfirm = async () => {
+        await settingsStore.removeCustomFilter(filterId);
     };
 
     const renderRemoveButton = () => {
         if (customUrl) {
             return (
-                <a
-                    className="filter__remove"
-                    onClick={removeCustomFilter}
-                >
-                    <Icon id="#trash" classname="icon--trash" />
-                </a>
+                <>
+                    {isOpenRemoveFilterModal && (
+                        <ConfirmModal
+                            title={reactTranslator.getMessage('options_remove_filter_confirm_modal_title')}
+                            subtitle={name}
+                            isOpen={isOpenRemoveFilterModal}
+                            setIsOpen={setIsOpenRemoveFilterModal}
+                            onConfirm={handleRemoveFilterConfirm}
+                            customConfirmTitle={reactTranslator.getMessage('options_remove_filter_confirm_modal_ok_button')}
+                            customCancelTitle={reactTranslator.getMessage('options_confirm_modal_cancel_button')}
+                        />
+                    )}
+                    <a
+                        className="filter__remove"
+                        onClick={handleRemoveFilterClick}
+                    >
+                        <Icon id="#trash" classname="icon--trash" />
+                    </a>
+                </>
             );
         }
         return null;

@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 
 export const ConfirmModal = ({
     title,
+    subtitle,
     isOpen,
     onConfirm,
     setIsOpen,
@@ -30,6 +31,11 @@ export const ConfirmModal = ({
                 <div className="modal__title">
                     {title}
                 </div>
+                {subtitle && (
+                    <div className="modal__subtitle">
+                        {subtitle}
+                    </div>
+                )}
                 <div className="modal__content">
                     <button
                         className="button button--m button--red-bg modal__btn modal__btn--statistic"
