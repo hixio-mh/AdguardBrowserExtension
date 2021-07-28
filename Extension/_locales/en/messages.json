@@ -935,46 +935,46 @@
     "filtering_log_details_modal_try_again": {
         "message": "Try again"
     },
-    "filtering_log_first_party_tag_tooltip": {
+    "filtering_log_tag_tooltip_first_party": {
         "message": "Only first-party requests"
     },
-    "filtering_log_third_party_tag_tooltip": {
+    "filtering_log_tag_tooltip_third_party": {
         "message": "Only third-party requests"
     },
-    "filtering_log_regular_tag_tooltip": {
+    "filtering_log_tag_tooltip_regular": {
         "message": "Only requests processed without any filtering"
     },
-    "filtering_log_allowed_tag_tooltip": {
+    "filtering_log_tag_tooltip_allowed": {
         "message": "Only unblocked requests"
     },
-    "filtering_log_blocked_tag_tooltip": {
+    "filtering_log_tag_tooltip_blocked": {
         "message": "Only blocked requests"
     },
-    "filtering_log_modified_tag_tooltip": {
+    "filtering_log_tag_tooltip_modified": {
         "message": "Only modified requests"
     },
-    "filtering_log_user_rules_tag_tooltip": {
+    "filtering_log_tag_tooltip_user_rules": {
         "message": "Only requests affected by user rules"
     },
-    "filtering_log_html_tag_tooltip": {
+    "filtering_log_tag_tooltip_html": {
         "message": "Documents and subdocuments"
     },
-    "filtering_log_css_tag_tooltip": {
+    "filtering_log_tag_tooltip_css": {
         "message": "Stylesheets"
     },
-    "filtering_log_js_tag_tooltip": {
+    "filtering_log_tag_tooltip_js": {
         "message": "Scripts"
     },
-    "filtering_log_xhr_tag_tooltip": {
+    "filtering_log_tag_tooltip_xhr": {
         "message": "XMLHttpRequests and fetch requests"
     },
-    "filtering_log_img_tag_tooltip": {
+    "filtering_log_tag_tooltip_img": {
         "message": "Images"
     },
-    "filtering_log_media_tag_tooltip": {
+    "filtering_log_tag_tooltip_media": {
         "message": "Media"
     },
-    "filtering_log_other_tag_tooltip": {
+    "filtering_log_tag_tooltip_other": {
         "message": "Other"
     },
     "filtering_log_badge_tooltip_third_party": {
