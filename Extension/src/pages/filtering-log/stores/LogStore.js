@@ -104,7 +104,7 @@ const initEventTypesFilters = {
         },
         {
             id: EVENT_TYPE_FILTERS.JAVA_SCRIPT,
-            title: 'JavaScript',
+            title: 'JS',
             types: [RequestTypes.SCRIPT],
             enabled: true,
         },
@@ -116,13 +116,15 @@ const initEventTypesFilters = {
         },
         {
             id: EVENT_TYPE_FILTERS.IMAGE,
-            title: reactTranslator.getMessage('filtering_type_image'),
+            // title: reactTranslator.getMessage('filtering_type_image'),
+            title: 'Img',
             types: [RequestTypes.IMAGE],
             enabled: true,
         },
         {
             id: EVENT_TYPE_FILTERS.MEDIA,
-            title: reactTranslator.getMessage('filtering_type_media'),
+            // title: reactTranslator.getMessage('filtering_type_media'),
+            title: 'Media',
             types: [RequestTypes.OBJECT, RequestTypes.MEDIA],
             enabled: true,
         },
