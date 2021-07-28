@@ -572,7 +572,7 @@
     "filtering_log_filter_regular": {
         "message": "Regular"
     },
-    "filtering_log_filter_allowlisted": {
+    "filtering_log_filter_allowed": {
         "message": "Allowed"
     },
     "filtering_log_filter_blocked": {
@@ -926,11 +926,50 @@
     "filtering_log_details_modal_try_again": {
         "message": "Try again"
     },
-    "filtering_log_tooltip_first_party": {
-        "message": "First-party requests"
+    "filtering_log_first_party_tag_tooltip": {
+        "message": "Only first-party requests"
     },
-    "filtering_log_tooltip_third_party": {
-        "message": "Third-party requests"
+    "filtering_log_third_party_tag_tooltip": {
+        "message": "Only third-party requests"
+    },
+    "filtering_log_third_party_badge_tooltip": {
+        "message": "Third-party request"
+    },
+    "filtering_log_regular_tag_tooltip": {
+        "message": "Only requests processed without any filtering"
+    },
+    "filtering_log_allowed_tag_tooltip": {
+        "message": "Only unblocked requests"
+    },
+    "filtering_log_blocked_tag_tooltip": {
+        "message": "Only blocked requests"
+    },
+    "filtering_log_modified_tag_tooltip": {
+        "message": "Only modified requests"
+    },
+    "filtering_log_user_rules_tag_tooltip": {
+        "message": "Only requests affected by user rules"
+    },
+    "filtering_log_html_tag_tooltip": {
+        "message": "Documents and subdocuments"
+    },
+    "filtering_log_css_tag_tooltip": {
+        "message": "Stylesheets"
+    },
+    "filtering_log_js_tag_tooltip": {
+        "message": "Scripts"
+    },
+    "filtering_log_xhr_tag_tooltip": {
+        "message": "XMLHttpRequests and fetch requests"
+    },
+    "filtering_log_img_tag_tooltip": {
+        "message": "Images"
+    },
+    "filtering_log_media_tag_tooltip": {
+        "message": "Media"
+    },
+    "filtering_log_other_tag_tooltip": {
+        "message": "Other"
     },
     "options_stealth_general_title": {
         "message": "General"

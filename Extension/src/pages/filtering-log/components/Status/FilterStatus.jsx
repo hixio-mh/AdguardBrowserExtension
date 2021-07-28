@@ -16,7 +16,7 @@ const StatusTitle = {
     PROCESSED: 'filtering_log_filter_processed',
     BLOCKED: 'filtering_log_filter_blocked',
     MODIFIED: 'filtering_log_filter_modified',
-    UNBLOCKED: 'filtering_log_filter_allowlisted',
+    UNBLOCKED: 'filtering_log_filter_allowed',
 };
 
 const titleMap = {
