@@ -120,16 +120,31 @@
     }
 
     &--in-exception {
-        & .switcher__btn {
-            right: 32px;
+        & .switcher {
+            cursor: default;
 
-            &:before {
+            &:hover {
+                & .switcher__btn {
+                    transform: none;
+                }
+            }
+
+            &__btn {
+                cursor: default;
+                right: 22px;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            & .switcher__icon--checkmark {
                 display: none;
             }
-        }
 
-        & .switcher__icon--checkmark {
-            display: none;
+            & .switcher__icon--exclamation {
+                display: block;
+            }
         }
     }
 }
@@ -203,6 +218,12 @@
 
         &--checkmark {
             display: block;
+        }
+
+        &--exclamation {
+            display: none;
+            left: calc(50% - 2px);
+            top: 14px;
         }
 
         &--cross {
