@@ -848,8 +848,11 @@
     "options_copyright": {
         "message": "All rights reserved."
     },
-    "options_delete_filter_confirm": {
-        "message": "Are you sure you want to delete this filter?"
+    "options_remove_filter_confirm_modal_title": {
+        "message": "Remove this filter?"
+    },
+    "options_remove_filter_confirm_modal_ok_button": {
+        "message": "Remove"
     },
     "options_nav_better_than_extension": {
         "message": "Why is AdGuard full-fledged program better than extension?"

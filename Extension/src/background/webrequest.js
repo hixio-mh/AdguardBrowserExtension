@@ -519,6 +519,11 @@ const webrequestInit = function () {
 
         // block if request is third party
         const thirdParty = TSUrlFilter.isThirdPartyRequest(requestUrl, originUrl);
+
+        if (frames.shouldStopRequestProcess(tab)) {
+            return;
+        }
+
         if (thirdParty) {
             requestContextStorage.update(requestId, { cspReportBlocked: true });
             return { cancel: true };

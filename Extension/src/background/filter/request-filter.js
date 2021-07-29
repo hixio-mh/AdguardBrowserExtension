@@ -200,6 +200,11 @@ export const RequestFilter = (() => {
             const isOpera = browserUtils.isOperaBrowser();
 
             const selectedScriptRules = scriptRules.filter((scriptRule) => {
+                if (scriptRule.isScriptlet) {
+                    // Scriptlets should not be excluded for remote filters
+                    return true;
+                }
+
                 const isLocal = localScriptRulesService.isLocal(scriptRule.getText());
 
                 if (isLocal) {
@@ -231,7 +236,7 @@ export const RequestFilter = (() => {
             });
 
             if (debug) {
-                scriptRules.forEach((scriptRule) => {
+                selectedScriptRules.forEach((scriptRule) => {
                     if (!scriptRule.isGeneric()) {
                         filteringLog.addScriptInjectionEvent({
                             tab,
