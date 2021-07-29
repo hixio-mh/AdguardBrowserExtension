@@ -364,12 +364,14 @@ class LogStore {
                 && !filteringEvent.requestRule.cssRule
                 && !filteringEvent.requestRule.scriptRule
                 && !filteringEvent.requestRule.cspRule
+                && !filteringEvent.replaceRules
                 && !filteringEvent.removeParam
                 && !filteringEvent.removeHeader;
             const isModified = filteringEvent.requestRule?.isModifyingCookieRule
                 || filteringEvent.requestRule?.cssRule
                 || filteringEvent.requestRule?.scriptRule
                 || filteringEvent.requestRule?.cspRule
+                || filteringEvent.replaceRules
                 || filteringEvent.removeParam
                 || filteringEvent.removeHeader;
             const isUserFilter = filteringEvent.requestRule?.filterId === 0;
