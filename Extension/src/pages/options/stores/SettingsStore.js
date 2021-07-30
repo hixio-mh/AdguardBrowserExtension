@@ -377,8 +377,17 @@ class SettingsStore {
     @action
     async addCustomFilter(filter) {
         const newFilter = await messenger.addCustomFilter(filter);
+
+        if (!newFilter) {
+            return;
+        }
+
         runInAction(() => {
             this.filters.push(newFilter);
+
+            if (this.searchSelect !== SEARCH_FILTERS.ALL) {
+                this.setSearchSelect(SEARCH_FILTERS.ALL);
+            }
         });
     }
 
