@@ -16,7 +16,12 @@ export class OptionsStorage {
         /**
          * Filtering log columns widths
          */
-        COLUMNS_WIDTHS: 'columns-widths',
+        COLUMNS_WIDTHS_PX: 'columns-widths-px',
+
+        /**
+         * Filtering log columns widths
+         */
+        COLUMNS_DATA: 'columns-data',
 
         /**
          * Request modal width
@@ -28,8 +33,15 @@ export class OptionsStorage {
         [this.KEYS.USER_RULES_EDITOR_WRAP]: false,
         [this.KEYS.ALLOWLIST_EDITOR_WRAP]: false,
         [this.KEYS.FOOTER_RATE_SHOW]: true,
-        [this.KEYS.COLUMNS_WIDTHS]: [],
         [this.KEYS.REQUEST_INFO_MODAL_WIDTH]: null,
+        [this.KEYS.COLUMNS_DATA]: {
+            status: { width: 260 },
+            url: { width: 260 },
+            type: { width: 100 },
+            rule: { width: 260 },
+            filter: { width: 260 },
+            source: { width: 200 },
+        },
     };
 
     constructor() {
