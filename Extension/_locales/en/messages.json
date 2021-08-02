@@ -942,7 +942,7 @@
         "message": "Only third-party requests"
     },
     "filtering_log_tag_tooltip_regular": {
-        "message": "Only requests processed without any filtering"
+        "message": "Only requests processed without filtering"
     },
     "filtering_log_tag_tooltip_allowed": {
         "message": "Only unblocked requests"
