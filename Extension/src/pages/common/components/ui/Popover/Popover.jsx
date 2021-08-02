@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Portal } from '../../Portal';
 import { Tooltip } from '../Tooltip';
 
-const TOOLTIP_SHOW_DELAY_MS = 500;
+const TOOLTIP_SHOW_DELAY_MS = 1000;
 
 /*
     Wrap child container for handle tooltips rendering in overlay on hover
