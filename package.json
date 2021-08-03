@@ -85,7 +85,8 @@
     "zip-webpack-plugin": "^4.0.1"
   },
   "dependencies": {
-    "@adguard/assistant": "^4.3.49",
+    "@adguard/assistant": "^4.3.45",
+    "@adguard/filters-downloader": "^1.1.5",
     "@adguard/scriptlets": "^1.4.4",
     "@adguard/translate": "^0.2.3",
     "@adguard/tsurlfilter": "^0.5.24",
@@ -97,7 +98,6 @@
     "classnames": "^2.2.6",
     "crypto-js": "^4.0.0",
     "date-fns": "^2.22.1",
-    "filters-downloader": "git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.4",
     "js-beautify": "^1.13.13",
     "lodash": "^4.17.21",
     "lru_map": "^0.4.1",

@@ -2,10 +2,17 @@
 # yarn lockfile v1
 
 
-"@adguard/assistant@^4.3.49":
+"@adguard/assistant@^4.3.45":
   version "4.3.49"
   resolved "https://registry.yarnpkg.com/@adguard/assistant/-/assistant-4.3.49.tgz#6d635f35993d7e765fca182f57e4c9993a608b70"
   integrity sha512-i8pky8/ADcQFl4ILzWLqTdg69enjPRXaMpEMClPYyVfj8ffzYjjMru7iNpjHVdzgSMKj9A4S54jyRuGlMWYDHw==
+
+"@adguard/filters-downloader@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-1.1.5.tgz#8d31c626f6e08ac138f32742bec3318bf43cbbb6"
+  integrity sha512-JgIPjzXIi79k3DJ+XVl1KTE7Ohxnv55Nz3X7WtGrm7Fa5b9il5tu/Es4TIUrIfzj4G1Bkx7GN63uZp94ZABlPg==
+  dependencies:
+    axios "^0.21.1"
 
 "@adguard/scriptlets@^1.4.4":
   version "1.4.4"
@@ -5287,12 +5294,6 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
-
-"filters-downloader@git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.4":
-  version "1.1.4"
-  resolved "git+https://github.com/AdguardTeam/FiltersDownloader.git#506d2536b4ae6df4181be21766540f216ab6cbd6"
-  dependencies:
-    axios "^0.21.1"
 
 find-cache-dir@^2.0.0, find-cache-dir@^2.1.0:
   version "2.1.0"
