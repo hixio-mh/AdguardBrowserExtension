@@ -952,5 +952,101 @@
     },
     "options_stealth_miscellaneous_title": {
         "message": "Miscellaneous"
+    },
+    "blocking_pages_malware": {
+        "message": "This web page at <strong>(var.Host)</strong> has been reported as a malware page and has been blocked based on your security preferences."
+    },
+    "blocking_pages_phishing": {
+        "message": "This web page at <strong>(var.Host)</strong> has been reported as a phishing page and has been blocked based on your security preferences."
+    },
+    "blocking_pages_advanced_button": {
+        "message": "Advanced"
+    },
+    "blocking_pages_more_info_button": {
+        "message": "More information"
+    },
+    "blocking_pages_page_title": {
+        "message": "Access denied"
+    },
+    "blocking_pages_safe_header_title": {
+        "message": "AdGuard has blocked access to this page"
+    },
+    "blocking_pages_safe_content_title": {
+        "message": "This web page has been reported as a malware page and has been blocked based on your security preferences."
+    },
+    "blocking_pages_parental_header_title": {
+        "message": "Parental control"
+    },
+    "blocking_pages_parental_content_title": {
+        "message": "We blocked this page because of parental filter restrictions."
+    },
+    "blocking_pages_parental_desc_one": {
+        "message": "Are you old enough? Enter the password"
+    },
+    "blocking_pages_parental_dns_desc_two": {
+        "message": "You're trying to reach a website listed by AdGuard as inappropriate for kids. If you’re an adult then you can switch off parental control in the settings or add this website to the whitelist."
+    },
+    "blocking_pages_blocked_content_title": {
+        "message": "Request to {site} was blocked by a filter rule. If you want to access this site, add it to exceptions."
+    },
+    "blocking_pages_rule_header_title": {
+        "message": "Blocked by AdGuard"
+    },
+    "blocking_pages_rule_content_title": {
+        "message": "AdGuard has prevented this page from loading due to the following filter rule"
+    },
+    "blocking_pages_btn_go_back": {
+        "message": "Go back"
+    },
+    "blocking_pages_btn_feedback": {
+        "message": "Send feedback"
+    },
+    "blocking_pages_btn_proceed": {
+        "message": "Proceed anyway"
+    },
+    "blocking_pages_btn_proceed_to": {
+        "message": "Proceed to site"
+    },
+    "blocking_pages_input_password": {
+        "message": "Enter password"
+    },
+    "blocking_pages_error_page_header": {
+        "message": "The webpage is not available"
+    },
+    "blocking_pages_summary": {
+        "message": "The webpage at <strong>(var.PageUrl)</strong> might be temporarily down or it may have moved to a new web address."
+    },
+    "blocking_pages_suggestions_header": {
+        "message": "Here are some suggestions"
+    },
+    "blocking_pages_suggestion1": {
+        "message": "Try <a href='(var.PageUrl)'>reload</a> this web page later."
+    },
+    "blocking_pages_suggestion2": {
+        "message": "Check the web page address to make sure you have entered it correctly."
+    },
+    "blocking_pages_suggestion3": {
+        "message": "Check your firewall settings. All connections should be allowed for AdGuard."
+    },
+    "blocking_pages_suggestion4": {
+        "message": "Check your proxy settings if you use proxy server."
+    },
+    "blocking_pages_show_details": {
+        "message": "Show details"
+    },
+    "blocking_pages_wrong_password": {
+        "message": "Wrong password"
+    },
+    "blocking_pages_something_wrong": {
+        "message": "Something went wrong. Please try again later or contact our support service."
+    },
+    "blocking_pages_error_page_title": {
+        "message": "Error"
+    },
+    "blocking_pages_knowledge_base": {
+        "message": "You can find the certificate installation instructions in our <a href='https://kb.adguard.com/technical-support/how-to-install-certificate'>Knowledge base</a>"
+    },
+    "blocking_pages_download": {
+        "message": "Download"
     }
 }

@@ -6,7 +6,7 @@
     <noscript>
         <title>Access Denied</title>
     </noscript>
-    <title data-key="pageTitle">Loading</title>
+    <title data-key="blocking_pages_page_title">Loading</title>
 </head>
 <body data-page-name="safebrowsing">
     <noscript>
@@ -33,7 +33,7 @@
     <div class="alert alert--red hidden" id="app">
         <div class="alert__in">
             <div class="alert__header alert__header--red">
-                <div class="alert__header-title" data-key="safeHeaderTitle">
+                <div class="alert__header-title" data-key="blocking_pages_safe_header_title">
                     AdGuard has blocked access to this page
                 </div>
             </div>
@@ -41,10 +41,10 @@
                 <a href="https://adguard.com" class="alert__logo"></a>
                 <div class="hero hero--red"></div>
                 <div class="alert__body-title">
-                    <p class="malware" data-key="malware">
+                    <p class="malware" data-key="blocking_pages_malware">
                         This web page at <strong>(var.Host)</strong> has been reported as a malware page and has been blocked based on your security preferences.
                     </p>
-                    <p class="phishing" data-key="phishing" >
+                    <p class="phishing" data-key="blocking_pages_phishing" >
                         This web page at <strong>(var.Host)</strong> has been reported as a phishing page and has been blocked based on your security preferences.
                     </p>
                 </div>
@@ -52,7 +52,7 @@
                     <button
                         id="btnGoBack"
                         class="button button--m button--green alert__btn"
-                        data-key="btnGoBack"
+                        data-key="blocking_pages_btn_go_back"
                     >
                         Go back
                     </button>
@@ -60,7 +60,7 @@
                         id="advancedButton"
                         class="button button--m button--white alert__btn"
                         href="#"
-                        data-key="advancedButton"
+                        data-key="blocking_pages_advanced_button"
                     >
                         Advanced
                     </button>
@@ -68,14 +68,14 @@
                         id="moreInfoButton"
                         class="button button--m button--white alert__btn hidden"
                         href="https://reports.adguard.com/(var.Host)/report.html"
-                        data-key="moreInfoButton"
+                        data-key="blocking_pages_more_info_button"
                     >
                         More information
                     </a>
                     <a
                         id="btnProceed"
                         class="button button--m button--white alert__btn hidden"
-                        data-key="btnProceed"
+                        data-key="blocking_pages_btn_proceed"
                     >
                         Proceed anyway
                     </a>

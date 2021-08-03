@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-import { i18n } from './localization';
+import { transformHtml } from './localization';
 
 /**
  * Class for BrowserExtension page controllers
@@ -23,7 +23,7 @@ export class BrowserExtension {
      * Translate page
      */
     translateApp() {
-        i18n.translateApp(this.currentConfiguration && this.currentConfiguration.locale);
+        transformHtml();
     }
 
     /**
