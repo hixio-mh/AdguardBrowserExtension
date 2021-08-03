@@ -21,6 +21,7 @@ const CONTENT_SCRIPT_END_PATH = path.resolve(__dirname, '../../Extension/pages/c
 const THANKYOU_PATH = path.resolve(__dirname, '../../Extension/pages/thankyou');
 const ASSISTANT_PATH = path.resolve(__dirname, '../../Extension/pages/assistant');
 const FULLSCREEN_USER_RULES_PATH = path.resolve(__dirname, '../../Extension/pages/fullscreen-user-rules');
+const BLOCKING_PAGES_PATH = path.resolve(__dirname, '../../Extension/pages/blocking-pages');
 
 const OUTPUT_PATH = config.outputPath;
 
@@ -56,6 +57,7 @@ export const genCommonConfig = (browserConfig) => {
             'pages/thankyou': THANKYOU_PATH,
             'pages/assistant': ASSISTANT_PATH,
             'pages/fullscreen-user-rules': FULLSCREEN_USER_RULES_PATH,
+            'pages/blocking-pages': BLOCKING_PAGES_PATH,
         },
         output: {
             path: path.join(BUILD_PATH, OUTPUT_PATH),
@@ -156,6 +158,18 @@ export const genCommonConfig = (browserConfig) => {
                 chunks: ['pages/fullscreen-user-rules'],
                 cache: false,
             }),
+            new HtmlWebpackPlugin({
+                template: path.join(BLOCKING_PAGES_PATH, 'adBlockedPage.html'),
+                filename: 'pages/adBlockedPage.html',
+                chunks: ['pages/blocking-pages'],
+                cache: false,
+            }),
+            new HtmlWebpackPlugin({
+                template: path.join(BLOCKING_PAGES_PATH, 'safebrowsing.html'),
+                filename: 'pages/safebrowsing.html',
+                chunks: ['pages/blocking-pages'],
+                cache: false,
+            }),
             new CopyWebpackPlugin({
                 patterns: [
                     {
@@ -175,11 +189,6 @@ export const genCommonConfig = (browserConfig) => {
                         context: 'Extension',
                         from: 'web-accessible-resources',
                         to: 'web-accessible-resources',
-                    },
-                    {
-                        context: 'Extension',
-                        from: 'pages/blocking-pages',
-                        to: 'pages/blocking-pages',
                     },
                     {
                         context: 'Extension',
