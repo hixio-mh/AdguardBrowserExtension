@@ -597,10 +597,10 @@
         "message": "General"
     },
     "options_block_acceptable_ads": {
-        "message": "Block search ads and the self-promotion"
+        "message": "Block search ads and websites' self-promotion"
     },
     "options_block_acceptable_ads_desc": {
-        "message": "Get rid of context-based ads that appear in search results and self-promoting ads on websites. <a><\/a>"
+        "message": "Get rid of <a>websites' self-promotion and context-based ads<\/a> that appear in search results"
     },
     "options_show_blocked_ads_count_title": {
         "message": "Indicate the number of blocked ads on the AdGuard extension icon"
@@ -672,7 +672,7 @@
         "message": "Phishing and malware protection"
     },
     "options_safebrowsing_enabled_desc": {
-        "message": "Special filters that protect you from malicious and phishing websites. <a><\/a>"
+        "message": "Special filters that protect you from <a>malicious and phishing websites<\/a>."
     },
     "options_site": {
         "message": "Official Website"
@@ -714,7 +714,10 @@
         "message": "Error while resetting settings"
     },
     "options_collect_hit_stats_title": {
-        "message": "Send statistics of ad filters usage"
+        "message": "Help with the development of AdGuard filters"
+    },
+    "options_collect_hit_stats_desc": {
+        "message": "Send <a>anonymous statistics of ad filters usage<\/a> that will help us improve and optimize them."
     },
     "options_show_context_menu_title": {
         "message": "Add AdGuard item to the browser's context menu"
@@ -724,9 +727,6 @@
     },
     "options_use_optimized_filters_desc": {
         "message": "Lists of filters optimized for mobile devices"
-    },
-    "options_learn_more": {
-        "message": "Learn more about it"
     },
     "options_privacy_title": {
         "message": "Stealth Mode"
@@ -891,7 +891,7 @@
         "message": "Create your own filters to fine-tune web filtering to your preference"
     },
     "group_description_lang": {
-        "message": "Don’t limit yourself — block ads on websites in any languages"
+        "message": "Don't limit yourself — block ads on websites in any languages"
     },
     "fullscreen_user_rules_title": {
         "message": "User rules"

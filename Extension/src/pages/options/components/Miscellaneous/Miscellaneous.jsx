@@ -96,15 +96,17 @@ const Miscellaneous = observer(() => {
                 />
                 <SettingsSetCheckbox
                     title={reactTranslator.getMessage('options_collect_hit_stats_title')}
-                    description={(
-                        <a
-                            href={COLLECT_HITS_LEARN_MORE_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {reactTranslator.getMessage('options_learn_more')}
-                        </a>
-                    )}
+                    description={reactTranslator.getMessage('options_collect_hit_stats_desc', {
+                        a: (chunks) => (
+                            <a
+                                href={COLLECT_HITS_LEARN_MORE_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {chunks}
+                            </a>
+                        ),
+                    })}
                     disabled={settings.values[DISABLE_COLLECT_HITS]}
                     id={DISABLE_COLLECT_HITS}
                     type={SETTINGS_TYPES.CHECKBOX}
