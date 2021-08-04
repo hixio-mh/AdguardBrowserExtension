@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import { Portal } from '../../Portal';
+import { AttachmentPortal } from '../../AttachmentPortal';
 import { Tooltip } from '../Tooltip';
 
 const TOOLTIP_SHOW_DELAY_MS = 1000;
@@ -58,9 +58,9 @@ export const Popover = ({
             onMouseLeave={handleMouseLeave}
         >
             {tooltip.visible && (
-                <Portal id="root-portal">
-                    <Tooltip position={tooltip.position} text={text} />
-                </Portal>
+                <AttachmentPortal rootId="root-portal" position={tooltip.position}>
+                    <Tooltip text={text} />
+                </AttachmentPortal>
             )}
             {children}
         </div>
