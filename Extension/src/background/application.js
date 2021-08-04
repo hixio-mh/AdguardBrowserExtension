@@ -56,6 +56,7 @@ export const application = (() => {
         // These filters are enabled by default
         const filterIds = [
             utils.filters.ENGLISH_FILTER_ID,
+            utils.filters.SEARCH_AND_SELF_PROMO_FILTER_ID,
         ];
 
         if (prefs.mobile) {
