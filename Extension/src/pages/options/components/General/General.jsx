@@ -158,13 +158,13 @@ const General = observer(() => {
                 <SettingsSetCheckbox
                     title={reactTranslator.getMessage('options_block_acceptable_ads')}
                     description={reactTranslator.getMessage('options_block_acceptable_ads_desc', {
-                        a: () => (
+                        a: (chunks) => (
                             <a
                                 href={ACCEPTABLE_ADS_LEARN_MORE_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                {reactTranslator.getMessage('options_learn_more')}
+                                {chunks}
                             </a>
                         ),
                     })}
@@ -178,13 +178,13 @@ const General = observer(() => {
                 <SettingsSetCheckbox
                     title={reactTranslator.getMessage('options_safebrowsing_enabled')}
                     description={reactTranslator.getMessage('options_safebrowsing_enabled_desc', {
-                        a: () => (
+                        a: (chunks) => (
                             <a
                                 href={SAFEBROWSING_LEARN_MORE_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                {reactTranslator.getMessage('options_learn_more')}
+                                {chunks}
                             </a>
                         ),
                     })}
