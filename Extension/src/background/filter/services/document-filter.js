@@ -37,7 +37,7 @@ export const documentFilterService = (function () {
 
     function documentFilterService() {
         const TRUSTED_TTL_MS = 1000 * 60 * 40; // 40 minutes
-        const DOCUMENT_BLOCKED_URL = 'pages/adBlockedPage.html';
+        const DOCUMENT_BLOCKED_URL = 'pages/ad-blocked.html';
 
         /**
          * Checks if url is trusted

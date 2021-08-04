@@ -954,10 +954,10 @@
         "message": "Miscellaneous"
     },
     "blocking_pages_malware": {
-        "message": "This web page at <strong>(var.Host)</strong> has been reported as a malware page and has been blocked based on your security preferences."
+        "message": "This web page at <strong>%host%</strong> has been reported as a malware page and has been blocked based on your security preferences."
     },
     "blocking_pages_phishing": {
-        "message": "This web page at <strong>(var.Host)</strong> has been reported as a phishing page and has been blocked based on your security preferences."
+        "message": "This web page at <strong>%host%</strong> has been reported as a phishing page and has been blocked based on your security preferences."
     },
     "blocking_pages_advanced_button": {
         "message": "Advanced"
@@ -1014,13 +1014,13 @@
         "message": "The webpage is not available"
     },
     "blocking_pages_summary": {
-        "message": "The webpage at <strong>(var.PageUrl)</strong> might be temporarily down or it may have moved to a new web address."
+        "message": "The webpage at <strong>%pageUrl%</strong> might be temporarily down or it may have moved to a new web address."
     },
     "blocking_pages_suggestions_header": {
         "message": "Here are some suggestions"
     },
     "blocking_pages_suggestion1": {
-        "message": "Try <a href='(var.PageUrl)'>reload</a> this web page later."
+        "message": "Try <a href='%pageUrl%'>reload</a> this web page later."
     },
     "blocking_pages_suggestion2": {
         "message": "Check the web page address to make sure you have entered it correctly."
