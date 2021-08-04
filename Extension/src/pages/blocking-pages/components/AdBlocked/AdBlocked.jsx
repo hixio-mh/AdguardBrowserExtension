@@ -42,10 +42,16 @@ export const AdBlocked = () => {
                         {rule}
                     </div>
                     <div className="alert__btns">
-                        <button type="button" className="button button--m button--green alert__btn" onClick={handleGoBack}>
-                            {reactTranslator.getMessage('blocking_pages_btn_go_back')}
-                        </button>
-                        <button type="button" onClick={handleProceed} className="button button--m button--white alert__btn">
+                        {window.history.length > 1 && (
+                            <button
+                                type="button"
+                                onClick={handleGoBack}
+                                className="button button--green alert__btn"
+                            >
+                                {reactTranslator.getMessage('blocking_pages_btn_go_back')}
+                            </button>
+                        )}
+                        <button type="button" onClick={handleProceed} className="button button--white alert__btn">
                             {reactTranslator.getMessage('blocking_pages_btn_proceed')}
                         </button>
                     </div>

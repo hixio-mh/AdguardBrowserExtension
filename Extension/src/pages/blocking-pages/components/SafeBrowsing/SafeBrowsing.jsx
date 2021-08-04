@@ -53,25 +53,27 @@ export const SafeBrowsing = () => {
                         </p>
                     </div>
                     <div className="alert__btns">
-                        <button
-                            type="button"
-                            onClick={handleGoBack}
-                            className="button button--m button--green alert__btn"
-                        >
-                            {reactTranslator.getMessage('blocking_pages_btn_go_back')}
-                        </button>
+                        {window.history.length > 1 && (
+                            <button
+                                type="button"
+                                onClick={handleGoBack}
+                                className="button button--green alert__btn"
+                            >
+                                {reactTranslator.getMessage('blocking_pages_btn_go_back')}
+                            </button>
+                        )}
                         {advanced ? (
                             <>
                                 <a
                                     href={`https://reports.adguard.com/${host}/report.html`}
-                                    className="button button--m button--white alert__btn"
+                                    className="button button--white alert__btn"
                                 >
                                     {reactTranslator.getMessage('blocking_pages_more_info_button')}
                                 </a>
                                 <button
                                     type="button"
                                     onClick={handleProceed}
-                                    className="button button--m button--white alert__btn"
+                                    className="button button--white alert__btn"
                                 >
                                     {reactTranslator.getMessage('blocking_pages_btn_proceed')}
                                 </button>
@@ -81,7 +83,7 @@ export const SafeBrowsing = () => {
                                 <button
                                     type="button"
                                     onClick={handleEnableAdvanced}
-                                    className="button button--m button--white alert__btn"
+                                    className="button button--white alert__btn"
                                 >
                                     {reactTranslator.getMessage('blocking_pages_advanced_button')}
                                 </button>
