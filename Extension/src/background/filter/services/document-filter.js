@@ -99,7 +99,7 @@ export const documentFilterService = (function () {
             // Chrome doesn't allow to show extension pages in incognito mode
             if (incognitoTab && browserUtils.isChromium()) {
                 // Closing tab before opening a new one may lead to browser crash (Chromium)
-                uiService.openTab(url, {}, async () => {
+                uiService.openTab(url).then(() => {
                     tabsApi.remove(tabId);
                 });
             } else {
