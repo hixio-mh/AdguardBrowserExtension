@@ -357,6 +357,7 @@ export const antiBannerService = (() => {
         const startTSUrlFilterEngine = async () => {
             const lists = [];
 
+            let userFilterList;
             // eslint-disable-next-line guard-for-in,no-restricted-syntax
             for (let filterId in rulesFilterMap) {
                 // To number
@@ -365,10 +366,24 @@ export const antiBannerService = (() => {
                 const isTrustedFilter = subscriptions.isTrustedFilter(filterId);
                 const rulesTexts = rulesFilterMap[filterId].join('\n');
 
-                lists.push(
-                    new TSUrlFilter.StringRuleList(filterId, rulesTexts, false, !isTrustedFilter, !isTrustedFilter),
+                const filterList = new TSUrlFilter.StringRuleList(
+                    filterId,
+                    rulesTexts,
+                    false,
+                    !isTrustedFilter,
+                    !isTrustedFilter,
                 );
+
+                if (filterId === utils.filters.USER_FILTER_ID) {
+                    userFilterList = filterList;
+                } else {
+                    lists.push(filterList);
+                }
             }
+
+            // We push user filter list in the end in order to make possible script rules to work
+            // AG-9443
+            lists.push(userFilterList);
 
             // append stealth mode rules
             const stealthModeList = stealthService.getStealthModeRuleList();
