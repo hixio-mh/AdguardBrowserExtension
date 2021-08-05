@@ -63,7 +63,8 @@ export const application = (() => {
             filterIds.push(utils.filters.MOBILE_ADS_FILTER_ID);
         }
 
-        filterIds.concat(subscriptions.getLangSuitableFilters());
+        const langSuitableFilters = subscriptions.getLangSuitableFilters();
+        filterIds.push(...langSuitableFilters);
         return filterIds;
     };
 
